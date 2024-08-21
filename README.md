@@ -1,34 +1,39 @@
 # **Table Top Counter**
 
-### TTCounter is a tiny app project for counting table games. Entering the app you will have three screens.
-#
-## 1. **Dices Screen:**
+**TTCounter** is a small app designed for counting scores and actions in various tabletop games. Opening the app, you will find a menu where you can go to three different screens for different games:
 
-#### On this screen you can roll six types of dices, they are: _D4, D6, D8, D10, D12_ and _D20._
----
-## 2. **Uno Screen:**
+## 1. **Dice Screen**
+On the Dice Screen, you can roll six different types of dice: **D4, D6, D8, D10, D12,** and **D20**.
 
-#### Entering in the uno screen the first thing that you will see is a little menu, where you can select if you are playing with two or four people, after selecting you are target to a different screen with the respective counter.
 ---
+
+## 2. **Uno Screen**
+When entering the Uno Screen, you'll first encounter a small menu where you can choose whether you’re playing with two or four players. After selecting the number of players, you’ll be directed to a screen with the corresponding counters to keep track of the game.
+
+---
+
 ## 3. **Truco Screen**
+The Truco Screen serves as a counter for Truco games, helping you track the score easily.
 
-#### This is just a counter for truco games.
+---
 
+## **Technologies Used**
 
-## **Languagues Used** 
+### **Languages**
 
+- **JavaScript**
+- **CSS**
 
-- ####  JavaScript
-- ####  CSS
+### **Framework**
 
+- **React Native**  
+  [Web Page](https://reactnative.dev/ "React Native")
 
-## **Framework Used** 
+### **Libraries**
 
+- **React Navigation**  
+  [Web Page](https://reactnavigation.org/ "React Navigation")
 
-- ####  React Native | [Link To Web](https://reactnative.dev/ "React Native")
+---
 
-
-## **Librairies Used** 
-
-
-- #### React Navigation | [Link To Web](https://reactnavigation.org/ "React Navigation")
+This markdown provides a structured overview of the TTCounter app, outlining its features and the technologies used in its development.
