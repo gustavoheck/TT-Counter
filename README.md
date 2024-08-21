@@ -35,5 +35,3 @@ The Truco Screen serves as a counter for Truco games, helping you track the scor
   [Web Page](https://reactnavigation.org/ "React Navigation")
 
 ---
-
-This markdown provides a structured overview of the TTCounter app, outlining its features and the technologies used in its development.
