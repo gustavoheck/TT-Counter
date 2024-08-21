@@ -34,4 +34,3 @@ The Truco Screen serves as a counter for Truco games, helping you track the scor
 - **React Navigation**  
   [Web Page](https://reactnavigation.org/ "React Navigation")
 
----
