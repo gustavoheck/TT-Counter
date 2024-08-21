@@ -24,15 +24,13 @@
 - ###  JavaScript
 - ###  CSS
 
----
- 
+
 ## **Framework Used** 
 
 
 - ###  React Native | [Link To Web](https://reactnative.dev/ "React Native")
 
----
- 
+
 ## **Librairies Used** 
 
 
