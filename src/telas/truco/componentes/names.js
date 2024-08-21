@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
       textShadowRadius: 10,
       top: '0%',
       width: '100%',
-      borderWidth: 1,
 
 
   },
@@ -61,6 +60,5 @@ const styles = StyleSheet.create({
       textShadowRadius: 10,
       top: '5%',
       width: '50%',
-      borderWidth: 1
   },
 });
