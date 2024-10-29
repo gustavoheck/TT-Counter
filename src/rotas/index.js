@@ -7,6 +7,7 @@ import MenuPrincipal from '../menuPrincipal';
 import Dados from '../telas/dados';
 import Truco from '../telas/truco';
 import Uno from '../telas/uno';
+import Chess from '../telas/chess'
 
 const Stack = createNativeStackNavigator()
 
@@ -18,6 +19,7 @@ export default function Rotas() {
                 <Stack.Screen name="Dados" component={Dados}/>
                 <Stack.Screen name="Truco" component={Truco}/>
                 <Stack.Screen name="Uno" component={Uno}/>
+                <Stack.Screen name="Chess" component={Chess}/>
             </Stack.Navigator>
     </NavigationContainer>
     )
