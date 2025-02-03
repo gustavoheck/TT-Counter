@@ -8,39 +8,56 @@ export default function Names (){
     const [Name2, setName2] = useState('PlayerTwo')
     return <>
 
-    <View style={stylesViews.bottomLeftSide}>
+    
       <TextInput
         onChangeText={(inputValue) => setName(inputValue)}
         keyboardType="default"
         defaultValue={Name}
-        color="black"
+        color="white"
         style={styles.name}
         underlineColorAndroid="transparent"
-        textAlign="center"
+        textAlign="left"
         allowFontScaling={true}
          />
-    </View>
+   
 
-    <View style={stylesViews.bottomRightSide}>
+    
       <TextInput
         onChangeText={(inputValue) => setName2(inputValue)}
         keyboardType="default"
         defaultValue={Name2}
-        color="black"
-        style={styles.name}
+        color="white"
+        style={styles.name2}
         underlineColorAndroid="transparent"
-        textAlign="center"
+        textAlign="left"
          />
-    </View>
+ 
     </>
 };
 
 const styles = StyleSheet.create({
     name: {
-        fontSize: 30,
+        fontSize: 25,
         position: 'absolute',
         alignSelf: 'center',
-        bottom: '92.5%',
         width: '100%',
+        fontFamily: "04B_30__",
+        top: '5%',
+        right: '0%',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: 5, height: 1},
+        textShadowRadius: 10,
     },
+    name2: {
+      fontSize: 25,
+      position: 'absolute',
+      alignSelf: 'center',
+      width: '100%',
+      fontFamily: "04B_30__",
+      top: '50%',
+      right: '0%',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: 5, height: 1},
+      textShadowRadius: 10,
+  },
 });

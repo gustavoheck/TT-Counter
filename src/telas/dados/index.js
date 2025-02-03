@@ -10,8 +10,12 @@ import DDoze from './D12/components/DDoze';
 
 import Return from '../../globalComponents/return';
 
+import Details from './details';
+
 export default function Dados (){
 return <>
+<View style={{flex: 1,backgroundColor: "grey"}}>
+    <Details/>
 <View style={{flex: 1,flexDirection:'row',alignItems:'center',justifyContent:'center', }}>
     <DSeis/>
 </View>
@@ -22,5 +26,7 @@ return <>
     <DOito/>
     <DQuatro/>
     <DDez/>
+</View>
 </>
+
 };

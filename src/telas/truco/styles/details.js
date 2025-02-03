@@ -5,23 +5,18 @@ export const stylesDetails = StyleSheet.create({
     WinsText: {
         position: "absolute",
         color: 'white',
-        fontFamily: 'Carter One Regular',
+        fontFamily: "04B_30__",
         fontSize: 30,
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 5, height: 1},
         textShadowRadius: 10,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        top: "2%"
     },
     Title: {
         position: "absolute",
-        color: 'white',
-        fontFamily: 'Carter One Regular',
-        fontSize: 25,
-        alignSelf: 'center',
-        top:'0%',
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: {width: 8, height: 1},
-        textShadowRadius: 10
+        transform:[{scale: 0.4}],
+        bottom: '91.75%'
     },
     midVerticalLine: {
         borderLeftWidth: 2,

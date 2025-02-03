@@ -2,32 +2,39 @@ import React from "react";
 import { StyleSheet } from "react-native";
 
 export const stylesOne = StyleSheet.create ({
-    Loses: {
-        position: 'absolute',
-        fontSize: 150,
-        color: 'black',
-        alignSelf: 'center',
-        top: '25%'
-    },
-    Wins: {
+    wins: {
         position: 'absolute',
         fontSize: 150, 
-        color: 'black',
+        color: 'white',
         alignSelf: 'center',
-        top: '25%'
+        fontFamily: "04B_30__",
+        top: '45%',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: 5, height: 1},
+        textShadowRadius: 10,
     },
-    ButtonAdd:{
+    buttonAdd:{
         position: 'absolute', 
-        fontSize: 35,
-        color: 'black',
-        left: '15%',
-        top: '65%'
+        color: 'white',
+        left: '3%',
+        top: '55%',
     },
-    ButtonMinus:{
+    buttonMinus:{
         position: 'absolute', 
-        fontSize: 35,
-        color: 'black',
-        right: '15%',
-        top: '65%'
+        color: 'white',
+        right: '3%',
+        top: '55%',
+    },
+    winText: {
+        fontSize: 50,
+        color: 'white',
+        position: 'absolute',
+        alignSelf: 'center',
+        fontFamily: "04B_30__",
+        top: '30%',
+        right: '32%',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: 5, height: 1},
+        textShadowRadius: 10,
     },
 });

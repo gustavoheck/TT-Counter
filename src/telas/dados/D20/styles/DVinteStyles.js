@@ -14,14 +14,15 @@ export const DVinteStyles = StyleSheet.create ({
         width: '100%',
         flex: 1,
         alignSelf: 'center', 
-        transform: [{ scale: 0.80}],
+        transform: [{ scale: 0.90}],
 
     },
     Number: {
         position: 'absolute',
         alignSelf: 'center',
-        top: '39%',
-        fontSize: 30,
-        color: 'black'
+        top: '35%',
+        fontSize: 60,
+        color: 'white',
+        fontFamily: "04B_30__"
     }
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground, Text,Como } from "react-native";
+import { ImageBackground, Text,Como, View } from "react-native";
 
 import Return from "../../globalComponents/whiteReturn";
 import background from './images/background.jpg'
@@ -9,15 +9,13 @@ import Names from "./components/names";
 
 export default function Chess(){
    return <>
-   <ImageBackground
-    source={background}
-    style={{flex: 1}}
-    resizeMode='cover'
+   <View
+    style={{flex: 1, backgroundColor: 'black'}}
    >
         <Return/>
         <Countdown/>
         <Names/>
         <Details/>
-    </ImageBackground>
+    </View>
     </>
 }

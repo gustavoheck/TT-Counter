@@ -7,7 +7,8 @@ export const stylesView = StyleSheet.create({
      width: '50%',
      left: '0%',
      height: '55%',
-     top: '5%'
+     top: '5%',
+     
     },
     elesSquare: {
      position: 'absolute',
@@ -21,7 +22,7 @@ export const stylesView = StyleSheet.create({
      width: '50%',
      left: '0%',
      height: '40%',
-     bottom: '0%'            
+     bottom: '0%',        
     },
     elesWinsSquare: {
      position: 'absolute',

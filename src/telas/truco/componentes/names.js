@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import {TextInput, View, StyleSheet,TouchableOpacity, Image} from "react-native";
+import {TextInput, View, StyleSheet} from "react-native";
 
 import { stylesView } from "../styles/view";
 
 export default function Names (){
-    const [Name, setName] = useState('Nós')
+    const [Name, setName] = useState('Nos')
     const [Name2, setName2] = useState('Eles')
 
     return <>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
       position: "absolute",
       left: '0%',
       fontSize: 30,
-      fontFamily: 'Carter One Regular',
+      fontFamily: "04B_30__",
       textShadowColor: 'rgba(0, 0, 0, 0.75)',
       textShadowOffset: {width: 8, height: 1},
       textShadowRadius: 10,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
   Nos: {
       position: "absolute",
-      fontFamily: 'Carter One Regular',
+      fontFamily: "04B_30__",
       fontSize: 30,
       textShadowColor: 'rgba(0, 0, 0, 0.75)',
       textShadowOffset: {width: 8, height: 1},

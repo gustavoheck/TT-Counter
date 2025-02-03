@@ -5,6 +5,7 @@ import { useState } from "react";
 import { stylesOne } from "../styles/playerOne";
 import { stylesTwo } from "../styles/playerTwo";
 import { stylesViews } from "../styles/views";
+import { styleOthers } from "../styles/styleOthers";
 
 export default function SoloDuo(){
 const [OneWins, setOneWins] = useState(0);
@@ -38,50 +39,27 @@ Alert.alert('Reset Wins', 'You really want to reset all the wins?', [
 }},
 ]);
 return <>
-<View style={stylesViews.topSideBackground}/>
-<View style={stylesViews.bottomSideBackground}/>
+  <View style={stylesViews.topSide}>
 
-  <View style={stylesViews.topLeftSide}>
-    <Text style={stylesOne.Wins}>{OneWins}</Text>
 
-    <TouchableOpacity style={stylesOne.ButtonAdd} onPress={ () => setOneWins(OneWins +1)}><Text style={{fontSize: 60, color: 'black'}}>+</Text></TouchableOpacity>
-    <TouchableOpacity style={stylesOne.ButtonMinus} onPress={ () => setOneWins(OneWins -1)}><Text style={{fontSize: 60, color: 'black'}}>-</Text></TouchableOpacity>
+    <Text style={stylesOne.winText}>Wins</Text>
+    <Text style={stylesOne.wins}>{OneWins}</Text>
+
+    <TouchableOpacity style={stylesOne.buttonAdd} onPress={ () => setOneWins(OneWins +1)}><Text style={styleOthers.buttonsText}>+</Text></TouchableOpacity>
+    <TouchableOpacity style={stylesOne.buttonMinus} onPress={ () => setOneWins(OneWins -1)}><Text style={styleOthers.buttonsText}>-</Text></TouchableOpacity>
   </View>
 
-  <View style={stylesViews.topRightSide}>
-    <Text style={stylesTwo.Wins}>{TwoWins}</Text>
+  <View style={stylesViews.bottomSide}>
 
-    <TouchableOpacity style={stylesTwo.ButtonAdd} onPress={ () => setTwoWins(TwoWins +1)}><Text style={{fontSize: 60, color: 'black',}}>+</Text></TouchableOpacity>
-    <TouchableOpacity style={stylesTwo.ButtonMinus} onPress={ () => setTwoWins(TwoWins -1)}><Text style={{fontSize: 60, color: 'black',}}>-</Text></TouchableOpacity>
-
-  </View>
-
-  <View style={stylesViews.bottomRightSide}>
-    <Text style={stylesTwo.Loses}>{TwoLoses}</Text>
-
-    <TouchableOpacity style={stylesTwo.ButtonAdd} onPress={ () => setTwoLoses(TwoLoses +1)}><Text style={{fontSize: 60, color: 'black',}}>+</Text></TouchableOpacity>
-    <TouchableOpacity style={stylesTwo.ButtonMinus} onPress={ () => setTwoLoses(TwoLoses -1)}><Text style={{fontSize: 60, color: 'black',}}>-</Text></TouchableOpacity>
-  </View>
-
-  <View  style={stylesViews.bottomLeftSide}>
-    <Text style={stylesOne.Loses}>{OneLoses}</Text>
     
-    <TouchableOpacity style={stylesOne.ButtonAdd} onPress={ () => setOneLoses(OneLoses +1)}><Text style={{fontSize: 60, color: 'black'}}>+</Text></TouchableOpacity>
-    <TouchableOpacity style={stylesOne.ButtonMinus} onPress={ () => setOneLoses(OneLoses -1)}><Text style={{fontSize: 60, color: 'black'}}>-</Text></TouchableOpacity>
-  </View>
 
-<TouchableOpacity onPress={resetWins} style={styles.button}><Text style={styles.text}>Reset Wins</Text></TouchableOpacity>
+    <Text style={stylesTwo.winText}>Wins</Text>
+    <Text style={stylesTwo.wins}>{TwoWins}</Text>
+
+    <TouchableOpacity style={stylesTwo.buttonAdd} onPress={ () => setTwoWins(TwoWins +1)}><Text style={styleOthers.buttonsText}>+</Text></TouchableOpacity>
+    <TouchableOpacity style={stylesTwo.buttonMinus} onPress={ () => setTwoWins(TwoWins -1)}><Text style={styleOthers.buttonsText}>-</Text></TouchableOpacity>
+
+  </View>
+<TouchableOpacity onPress={resetWins} style={styleOthers.resetButton}><Text style={styleOthers.resetText}>Reset Wins</Text></TouchableOpacity>
 </>
 };
-
-const styles = StyleSheet.create ({
-  text: {
-    fontSize: 20,
-    color: 'black'
-  },
-  button: {
-    position:'absolute',
-    top: '95%',
-    left: '12.5%'
-  }
-});

@@ -1,10 +1,15 @@
 import React, {useState} from "react";
-import { TouchableOpacity, Text, View, Alert} from "react-native";
+import { TouchableOpacity, Text, View, Alert, Image,} from "react-native";
 
 import { stylesNos } from "../styles/nos";
 import { stylesEles } from "../styles/eles";
 import { stylesReset } from "../styles/reset";
 import { stylesView } from "../styles/view";
+
+import hearts from "../images/hearts.png"
+import diamonds from "../images/diamonds.png"
+import spades from "../images/spades.png"
+import clubs from "../images/clubs.png"
 
 
 export default function Interface (){
@@ -60,19 +65,52 @@ function GamePart (){
 
     return <>
       <View style={stylesView.nosSquare}>
-        <TouchableOpacity onPress={() => setNosPontos(NosPontos + 1)} style={stylesNos.oneNosButton}><Text style={stylesNos.oneNosText}>+</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setNosPontos(NosPontos + 3)} style={stylesNos.threeNosButton}><Text style={stylesNos.threeNosText}>+3</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setNosPontos(NosPontos - 3)} style={stylesNos.threeNosButtonMinus}><Text style={stylesNos.threeNosText}>-3</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setNosPontos(NosPontos - 1)} style={stylesNos.oneNosButtonMinus}><Text style={stylesNos.oneNosText}>-</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => setNosPontos(NosPontos + 1 )} style={stylesNos.oneNosButton}>
+              <Image source={hearts} style={{transform: [{scale: 0.3 }], position: 'absolute'}} />
+              <Text style={stylesNos.oneNosText}>+</Text>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity onPress={() => setNosPontos(NosPontos + 3)} style={stylesNos.threeNosButton}>
+          <Image source={spades} style={{transform: [{scale: 0.3 }], position: 'absolute'}} />
+          <Text style={stylesNos.threeNosText}>+3</Text>
+          </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => setNosPontos(NosPontos - 3)} style={stylesNos.threeNosButtonMinus}>
+          <Image source={clubs} style={{transform: [{scale: 0.3}], position: 'absolute'}} />
+          <Text style={stylesNos.threeNosText}>-3</Text>
+          </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => setNosPontos(NosPontos - 1)} style={stylesNos.oneNosButtonMinus}>
+          <Image source={diamonds} style={{transform: [{scale: 0.3}], position: 'absolute'}} />
+          <Text style={stylesNos.oneNosText}>-</Text>
+        </TouchableOpacity>
+
 
         <Text style={stylesNos.pointCountNos}>{NosPontos}</Text>
       </View>
 
       <View style={stylesView.elesSquare}>
-        <TouchableOpacity onPress={() => setElesPontos(ElesPontos + 1)} style={stylesEles.oneElesButton}><Text style={stylesEles.oneElesText}>+</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setElesPontos(ElesPontos + 3)} style={stylesEles.threeElesButton}><Text style={stylesEles.threeElesText}>+3</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setElesPontos(ElesPontos - 3)} style={stylesEles.threeElesButtonMinus}><Text style={stylesEles.threeElesText}>-3</Text></TouchableOpacity>
-        <TouchableOpacity onPress={() => setElesPontos(ElesPontos - 1)} style={stylesEles.oneElesButtonMinus}><Text style={stylesEles.oneElesText}>-</Text></TouchableOpacity>
+      <TouchableOpacity onPress={() => setElesPontos(ElesPontos + 1 )} style={stylesEles.oneElesButton}>
+              <Image source={diamonds} style={{transform: [{scale: 0.3 }], position: 'absolute'}} />
+              <Text style={stylesEles.oneElesText}>+</Text>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity onPress={() => setElesPontos(ElesPontos + 3)} style={stylesEles.threeElesButton}>
+          <Image source={clubs} style={{transform: [{scale: 0.3 }], position: 'absolute'}} />
+          <Text style={stylesEles.threeElesText}>+3</Text>
+          </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => setElesPontos(ElesPontos - 3)} style={stylesEles.threeElesButtonMinus}>
+          <Image source={spades} style={{transform: [{scale: 0.3}], position: 'absolute'}} />
+          <Text style={stylesEles.threeElesText}>-3</Text>
+          </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => setElesPontos(ElesPontos - 1)} style={stylesEles.oneElesButtonMinus}>
+          <Image source={hearts} style={{transform: [{scale: 0.3}], position: 'absolute'}} />
+          <Text style={stylesEles.oneElesText}>-</Text>
+        </TouchableOpacity>
 
         <Text style={stylesEles.pointCountEles}>{ElesPontos}</Text>
       </View>

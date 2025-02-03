@@ -11,18 +11,19 @@ export const DDezStyles = StyleSheet.create ({
         left: '31.25%'
       },
     image: {
-        height: '20%',
+        height: '30%',
         width: '120%',
         flex: 1,
         alignSelf: 'center', 
-        transform: [{ scale: 0.85}],
+        transform: [{ scale: 0.90}],
 
     },
     Number: {
         position: 'absolute',
         alignSelf: 'center',
-        top: '23%',
-        fontSize: 40,
-        color: 'black'
+        top: '40%',
+        fontSize: 50,
+        color: 'white',
+        fontFamily: "04B_30__"
     }
 });

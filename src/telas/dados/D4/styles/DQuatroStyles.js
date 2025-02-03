@@ -8,20 +8,22 @@ export const DQuatroStyles = StyleSheet.create ({
         height: '17.5%',
         width: '30%',
         top: '70%',
-        right: '0%'
+        right: '1%'
       },
     image: {
-        height: '10%',
+        height: '100%',
         width: '120%',
         flex: 1,
         alignSelf: 'center', 
-        transform: [{ scale: 0.75}],
+        transform: [{ scale: 1.1}],
     },
     Number: {
         position: 'absolute',
         alignSelf: 'center',
-        top: '32.5%',
-        fontSize: 50,
-        color: 'black'
+        top: '50%',
+        fontSize: 45,
+        left: '35.5%',
+        color: 'white',
+        fontFamily: "04B_30__",
     }
 });

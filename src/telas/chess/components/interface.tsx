@@ -58,6 +58,7 @@ export default function Countdown () {
     
 
     return <>
+    
         <TouchableOpacity onPress={() => {Counter2.startTimer(); Counter1.StopTimer();}} disabled={Disabled2} style={Styles.button1}>
         <Image
                source={Temporizador}
@@ -77,10 +78,12 @@ export default function Countdown () {
                 <Text style={Styles.twoPoints}>:</Text>
                 <Text style={Styles.secs}>{Secs2 < 10 ? '0' + Secs2 : Secs2}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={{bottom: '0%', alignSelf: 'center', transform: [{scale: 0.2}]}} onPress={Reset}>
+
+        <TouchableOpacity style={{top: '77.5%', alignSelf: 'center', transform: [{scale: 0.5}], position: "absolute"}} onPress={Reset}>
             <Image
             source={Restart}
             />
         </TouchableOpacity>
+
     </>
 };

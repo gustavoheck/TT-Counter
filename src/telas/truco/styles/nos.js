@@ -4,55 +4,68 @@ import { StyleSheet } from "react-native";
 export const stylesNos = StyleSheet.create({
     threeNosText: {
         fontSize: 30,
-        fontFamily: 'Carter One Regular',
+        fontFamily: "04B_30__",
         color: 'white',
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 8, height: 1},
         textShadowRadius: 10,
     },
     oneNosText: {
-        fontSize: 60,
+        fontSize: 40,
         color: 'white',
-        fontFamily: 'Carter One Regular',
+        fontFamily: "04B_30__",
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 8, height: 1},
         textShadowRadius: 10,
+        position: 'absolute'
     },
     oneNosButton: {
-        left: '10%',
+        alignSelf: 'center',
         position: 'absolute',
-        top: '50%'
+        justifyContent: 'center',
+        alignItems: 'center',
+        left: '20%',
+        top: '55%',
     },
     oneNosButtonMinus: {
-        right: '10%',
+        alignSelf: 'center',
         position: 'absolute',
-        top: '50%'
+        justifyContent: 'center',
+        alignItems: 'center',
+        right: '20%',
+        top: '55%',
     },
     threeNosButton: {
-        left: '25%',
+        alignSelf: 'center',
         position: 'absolute',
-        top: '65%'
+        justifyContent: 'center',
+        alignItems: 'center',
+        left: '15%',
+        top: '75%',
     },
     threeNosButtonMinus: {
-        right: '25%',
+        alignSelf: 'center',
         position: 'absolute',
-        top: '65%'
+        justifyContent: 'center',
+        alignItems: 'center',
+        right: '15%',
+        top: '75%',
     },
     NosWins: {
         fontSize: 80,
         color: 'white',
-        fontFamily: 'Carter One Regular',
+        fontFamily: "04B_30__",
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 5, height: 1},
         textShadowRadius: 10,
         position: 'absolute',
         alignSelf: 'center',
-        top: '30%'
+        top: '35%'
     },
     pointCountNos: {
         fontSize: 100,
         color: 'white',
-        fontFamily: 'Carter One Regular',
+        fontFamily: "04B_30__",
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 10, height: 1},
         textShadowRadius: 10,

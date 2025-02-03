@@ -3,20 +3,20 @@ import { StyleSheet } from "react-native";
 
 export const Styles = StyleSheet.create({
     secs: {
-        fontSize: 50,
+        fontSize: 60,
         color: 'white',
         fontWeight: "bold",
         alignSelf: 'center',
         position: "absolute",
-        top: '40%',
+        top: '47.5%',
         right: '28%'},
     mins: {
-        fontSize: 50,
+        fontSize: 60,
         color: 'white',
         fontWeight: "bold",
         alignSelf: 'center',
         position: "absolute",
-        top: '40%',
+        top: '47.5%',
         left: '30%'},
 
     twoPoints: 
@@ -26,13 +26,13 @@ export const Styles = StyleSheet.create({
             fontWeight: "bold",
             alignSelf: 'center',
             position: "absolute",
-            top: '38%',
+            top: '48.5%',
             right: '47.5%'
         },
 
     image: 
     {
-        transform: [{ scale: 0.85}],
+        transform: [{ scale: 1.4}],
         alignSelf: 'center',
         resizeMode: "contain",
         flex: 1

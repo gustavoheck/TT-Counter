@@ -9,7 +9,7 @@ export default function MenuPrincipal(){
   const navigation = useNavigation()
 
   return <>
-   <View style={{flex: 1, backgroundColor: '#8B7167'}}>
+   <View style={{flex: 1, backgroundColor: '#261408'}}>
      <Buttons/>
      <Top/>
    </View>

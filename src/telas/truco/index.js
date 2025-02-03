@@ -10,17 +10,11 @@ import background from "./images/background.jpg";
 
 export default function Truco (){
     return <>
-  <View style={{flex: 1}}>
-     <ImageBackground
-     source={background}
-     style={{width: '100%', height: '100%',}}
-     resizeMode='cover'
-     >
+  <View style={{flex: 1, backgroundColor: "#004500"}}>
         <Names/>
         <Interface/>
         <Details/>
         <WhiteReturn/>
-     </ImageBackground>
    </View>
     </>
 };

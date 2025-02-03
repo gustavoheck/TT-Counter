@@ -1,8 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 
 import { stylesView } from "../styles/view";
 import { stylesDetails } from "../styles/details";
+
+import title from "../images/trucoTitle.png"
 
 export default function Details (){
     return <>
@@ -24,7 +26,10 @@ export default function Details (){
       }}
     />
 
-  <Text style={stylesDetails.Title}>Truco</Text>
+  <Image
+    source={title}
+    style={stylesDetails.Title}
+  />
 
   <View style={stylesView.elesWinsSquare}>
     <Text style={stylesDetails.WinsText}>Wins</Text>

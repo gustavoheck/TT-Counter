@@ -14,14 +14,15 @@ export const DOitoStyles = StyleSheet.create ({
         width: '120%',
         flex: 1,
         alignSelf: 'center', 
-        transform: [{ scale: 0.75}],
+        transform: [{ scale: 1}],
 
     },
     Number: {
         position: 'absolute',
         alignSelf: 'center',
-        top: '17.5%',
+        top: '34.5%',
         fontSize: 50,
-        color: 'black'
+        color: 'white',
+        fontFamily: "04B_30__"
     }
 });

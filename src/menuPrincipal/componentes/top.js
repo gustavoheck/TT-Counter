@@ -7,7 +7,7 @@ export default function Top (){
     return <>
         <Image
           source={tabletop}
-          style={{alignSelf: 'center', position: 'absolute', height: '50%', width: '100%', bottom: '55%'}}
+          style={{alignSelf: 'center', position: 'absolute', height: '50%', width: '110%', bottom: '55%',  transform: [{ scale: 0.80}]}}
         />
     </>
 }; 

@@ -5,7 +5,6 @@ import FourPlayers from "./componentes/fourPlayers";
 import Details from "./componentes/details";
 import Names from "./componentes/names";
 
-import Return from "../../../../globalComponents/return";
 
 export default function InterfaceDois (){
     return <>
@@ -13,7 +12,7 @@ export default function InterfaceDois (){
             <FourPlayers/>
             <Details/>
             <Names/>
-            <Return/>
+            
         </View>
     </>
 };

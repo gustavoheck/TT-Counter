@@ -21,8 +21,9 @@ export const DDozeStyles = StyleSheet.create ({
     Number: {
         position: 'absolute',
         alignSelf: 'center',
-        top: '32.5%',
-        fontSize: 50,
-        color: 'black'
+        top: '37.5%',
+        fontSize: 60,
+        color: 'white',
+        fontFamily: "04B_30__"
     }
 });

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Text, TouchableOpacity, Image, View } from 'react-native';
 import { DSeisStyles } from '../styles/DSeisStyles';
 
-import dadoUm from '../images/dadoUm.png';
-import dadoDois from '../images/dadoDois.png';
-import dadoTres from '../images/dadoTres.png';
-import dadoQuatro from '../images/dadoQuatro.png';
-import dadoCinco from '../images/dadoCinco.png';
-import dadoSeis from '../images/dadoSeis.png';
+import dadoUm from '../images/dado0.png';
+import dadoDois from '../images/dado1.png';
+import dadoTres from '../images/dado2.png';
+import dadoQuatro from '../images/dado3.png';
+import dadoCinco from '../images/dado4.png';
+import dadoSeis from '../images/dado5.png';
 
 const diceImages = {
   1: dadoUm,

@@ -10,9 +10,9 @@ export const DSeisStyles = StyleSheet.create ({
     },
     image: {
         height: '80%',
-        width: '80%',
-        transform: [{ scale: 1.57}],
+        width: '100%',
+        transform: [{ scale: 1}],
         flex: 1,
-        alignSelf: 'center'
+        alignSelf: 'center',
     },
 });
