@@ -79,7 +79,7 @@ export default function Countdown () {
                 <Text style={Styles.secs}>{Secs2 < 10 ? '0' + Secs2 : Secs2}</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={{top: '77.5%', alignSelf: 'center', transform: [{scale: 0.5}], position: "absolute"}} onPress={Reset}>
+        <TouchableOpacity style={{top: '76%', alignSelf: 'center', transform: [{scale: 0.4}], position: "absolute"}} onPress={Reset}>
             <Image
             source={Restart}
             />

@@ -4,10 +4,10 @@ import { StyleSheet } from "react-native";
 export const styleOthers = StyleSheet.create ({
     Title: {
         color: 'white',
-        transform: [{scale: 0.5}],
+        transform: [{scale: 0.4}],
         position: 'absolute',
         alignSelf: 'center',
-        bottom: '92.15%'
+        bottom: '92%'
     },
     buttonsText: {
         color: 'white',
