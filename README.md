@@ -17,6 +17,11 @@ The Truco Screen serves as a counter for Truco games, helping you track the scor
 
 ---
 
+## 4. **Chess Screen**
+The Chess Screen serves as a chess clock, helping you to play with a timer whitout having the chess clock.
+
+---
+
 ## **Technologies Used**
 
 ### **Languages**
