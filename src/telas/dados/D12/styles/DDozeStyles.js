@@ -20,10 +20,12 @@ export const DDozeStyles = StyleSheet.create ({
     },
     Number: {
         position: 'absolute',
-        alignSelf: 'center',
         top: '37.5%',
+        textAlign: 'center',
+        right: '10%',
+        left: '10%',
         fontSize: 60,
-        color: 'white',
+        color: 'black',
         fontFamily: "04B_30__"
     }
 });

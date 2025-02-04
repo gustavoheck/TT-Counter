@@ -20,10 +20,12 @@ export const DDezStyles = StyleSheet.create ({
     },
     Number: {
         position: 'absolute',
-        alignSelf: 'center',
+        textAlign: 'center',
+        right: '10%',
+        left: '10%',
         top: '40%',
         fontSize: 50,
-        color: 'white',
+        color: 'black',
         fontFamily: "04B_30__"
     }
 });

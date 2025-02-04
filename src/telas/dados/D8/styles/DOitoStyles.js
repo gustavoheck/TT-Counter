@@ -19,10 +19,12 @@ export const DOitoStyles = StyleSheet.create ({
     },
     Number: {
         position: 'absolute',
-        alignSelf: 'center',
+        textAlign: 'center',
+        right: '10%',
+        left: '10%',
         top: '34.5%',
         fontSize: 50,
-        color: 'white',
+        color: 'black',
         fontFamily: "04B_30__"
     }
 });

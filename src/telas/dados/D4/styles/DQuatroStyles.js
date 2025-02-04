@@ -19,11 +19,12 @@ export const DQuatroStyles = StyleSheet.create ({
     },
     Number: {
         position: 'absolute',
-        alignSelf: 'center',
+        textAlign: 'center',
+        right: '8%',
+        left: '10%',
         top: '50%',
         fontSize: 45,
-        left: '35.5%',
-        color: 'white',
+        color: 'black',
         fontFamily: "04B_30__",
     }
 });

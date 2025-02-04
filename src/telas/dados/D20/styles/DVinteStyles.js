@@ -19,10 +19,12 @@ export const DVinteStyles = StyleSheet.create ({
     },
     Number: {
         position: 'absolute',
-        alignSelf: 'center',
+        textAlign: 'center',
         top: '35%',
+        right: '10%',
+        left: '10%',
         fontSize: 60,
-        color: 'white',
+        color: 'black',
         fontFamily: "04B_30__"
     }
 });
