@@ -4,44 +4,59 @@ import { StyleSheet } from "react-native";
 export const stylesYellow = StyleSheet.create ({
     points: {
         position: 'absolute',
-        alignSelf: 'center',
-        top: '20%',
-        color: 'black',
-        fontSize: 100,
+        color: 'white',
+        fontSize: 50,
+        fontFamily: '04B_30__',
+        textAlign: 'center',
+        top: '80%',
+        right: '0%',
+        paddingLeft: '5%',
+        left: '0%',
+       
     },
     points2r: {
         position: 'absolute',
-        alignSelf: 'center',
-        top: '60%',
-        left: '10%',
-        color: 'black',
-        fontSize: 60,
+        textAlign: 'center',
+        color: 'white',
+        fontSize: 50,
+        fontFamily: '04B_30__',
+        top: '80%',
+        right: '0%',
+        paddingLeft: '5%',
+        left: '0%',
     },
     points3r: {
         position: 'absolute',
-        alignSelf: 'center',
-        top: '60%',
-        right: '10%',
-        color: 'black',
-        fontSize: 60,
+        textAlign: 'center',
+        color: 'white',
+        fontSize: 50,
+        fontFamily: '04B_30__',
+        textAlign: 'center',
+        top: '80%',
+        right: '0%',
+        paddingLeft: '5%',
+        left: '0%',
     },
 
 
     yellow1rbutton: {
         position: "absolute",
-        top: '10%',
-        alignSelf: 'center'
+        top: '15%',
+        alignSelf: 'center',
+        transform: [{scale: 1.10}],
     },
     yellow2rbutton: {
         position: "absolute",
-        top: '50%',
-        left: '7%',
-        alignSelf: 'center'
+        top: '55%',
+        right: '52.5%',
+        alignSelf: 'center',
+        transform: [{scale: 0.85}]
     },
     yellow3rbutton: {
         position: "absolute",
-        top: '50%',
-        right: '7%',
-        alignSelf: 'center'
+        top: '55%',
+        left: '52.5%',
+        alignSelf: 'center',
+        transform: [{scale: 0.85}]
     },
 });

@@ -1,13 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
+import unoTitle4x from '../images/unoTitle4x.png'
 
 export default function Details (){
 return <>
-    <Text style={{color: 'black',
-    fontSize: 40,
+    <Image 
+    source={unoTitle4x}
+    style={{color: 'black',
     position: 'absolute',
-    alignSelf: 'center'
-    }}>Uno</Text>
+    alignSelf: 'center',
+    transform:[{scale: 0.4}],
+    bottom: '91.75%'
+    }}/>
 
     <View style= {{
         borderLeftWidth: 4,

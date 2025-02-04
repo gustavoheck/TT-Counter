@@ -12,6 +12,7 @@ import { stylesRed } from "../styles/red";
 import { stylesYellow } from "../styles/yellow";
 
 import { stylesViews } from "../styles/views";
+import { otherDetails } from "../styles/otherDetails";
 
 export default function FourPlayers (){
 
@@ -52,116 +53,113 @@ export default function FourPlayers (){
 
   <View style={stylesViews.blue}>
 
-    <Text style={stylesBlue.points}>{points.Blue[0]}</Text>
-    <Text style={stylesBlue.points2r}>{points.Blue[1]}</Text>
-    <Text style={stylesBlue.points3r}>{points.Blue[2]}</Text>
-
     <TouchableOpacity style={stylesBlue.blue1rbutton} onPress={() => incrementPoints("Blue", 0)}>
         <Image 
         source={coroa1}
-        style={{width: 60, height: 100,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesBlue.points}>{points.Blue[0]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesBlue.blue2rbutton}onPress={() => incrementPoints("Blue", 1)}>
         <Image 
         source={coroa2}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesBlue.points2r}>{points.Blue[1]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesBlue.blue3rbutton}  onPress={() => incrementPoints("Blue", 2)}>
         <Image 
         source={coroa3}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesBlue.points3r}>{points.Blue[2]}</Text>
     </TouchableOpacity>
   </View>
 
   <View style={stylesViews.green}>
 
-    <Text style={stylesGreen.points}>{points.Green[0]}</Text>
-    <Text style={stylesGreen.points2r}>{points.Green[1]}</Text>
-    <Text style={stylesGreen.points3r}>{points.Green[2]}</Text>
-
     <TouchableOpacity style={stylesGreen.green1rbutton}  onPress={() => incrementPoints("Green", 0)}>
+        
         <Image 
         source={coroa1}
-        style={{width: 60, height: 100,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesGreen.points}>{points.Green[0]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesGreen.green2rbutton}  onPress={() => incrementPoints("Green", 1)}>
         <Image 
         source={coroa2}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesGreen.points2r}>{points.Green[1]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesGreen.green3rbutton}  onPress={() => incrementPoints("Green", 2)}>
         <Image 
         source={coroa3}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesGreen.points3r}>{points.Green[2]}</Text>
     </TouchableOpacity>
   </View>
 
   <View style={stylesViews.red}>
 
-    <Text style={stylesRed.points}>{points.Red[0]}</Text>
-    <Text style={stylesRed.points2r}>{points.Red[1]}</Text>
-    <Text style={stylesRed.points3r}>{points.Red[2]}</Text>
-
     <TouchableOpacity style={stylesRed.red1rbutton}  onPress={() => incrementPoints("Red", 0)}>
         <Image 
         source={coroa1}
-        style={{width: 60, height: 100,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesRed.points}>{points.Red[0]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesRed.red2rbutton}  onPress={() => incrementPoints("Red", 1)}>
         <Image 
         source={coroa2}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesRed.points2r}>{points.Red[1]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesRed.red3rbutton}  onPress={() => incrementPoints("Red", 2)}>
         <Image 
         source={coroa3}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesRed.points3r}>{points.Red[2]}</Text>
     </TouchableOpacity>
   </View>
 
   <View style={stylesViews.yellow}>
 
-    <Text style={stylesYellow.points}>{points.Yellow[0]}</Text>
-    <Text style={stylesYellow.points2r}>{points.Yellow[1]}</Text>
-    <Text style={stylesYellow.points3r}>{points.Yellow[2]}</Text>
-
     <TouchableOpacity style={stylesYellow.yellow1rbutton}  onPress={() => incrementPoints("Yellow", 0)}>
         <Image 
         source={coroa1}
-        style={{width: 60, height: 100,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesYellow.points}>{points.Yellow[0]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesYellow.yellow2rbutton}  onPress={() => incrementPoints("Yellow", 1)}>
         <Image 
         source={coroa2}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesYellow.points2r}>{points.Yellow[1]}</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={stylesYellow.yellow3rbutton}  onPress={() => incrementPoints("Yellow", 2)}>
         <Image 
         source={coroa3}
-        style={{width: 45, height: 80,}}
+        style={{width: 100, height: 100,}}
         />
+        <Text style={stylesYellow.points3r}>{points.Yellow[2]}</Text>
     </TouchableOpacity>
 
-    <TouchableOpacity onPress={resetWins} style={styles.button}><Text style={styles.text}>Reset Wins</Text></TouchableOpacity>
+    <TouchableOpacity onPress={resetWins} style={otherDetails.resetButton}><Text style={otherDetails.resetText}>Reset Wins</Text></TouchableOpacity>
     </View>
     </>
 };
@@ -187,15 +185,3 @@ export function Background (){
 </View>
     </>
 };
-
-const styles = StyleSheet.create ({
-    text: {
-      fontSize: 20,
-      color: 'black'
-    },
-    button: {
-      position:'absolute',
-      bottom: '2.5%',
-      alignSelf: 'center'
-    }
-  });

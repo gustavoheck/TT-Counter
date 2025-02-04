@@ -15,7 +15,7 @@ export default function Names (){
         keyboardType="default"
         defaultValue={Blue}
         color="black"
-        style={styles.Blue}
+        style={styles.text}
         textAlign="center"
 
          />
@@ -26,7 +26,7 @@ export default function Names (){
         keyboardType="default"
         defaultValue={Green}
         color="black"
-        style={styles.Green}
+        style={styles.text}
         textAlign="center"
         />
     </View>
@@ -36,7 +36,7 @@ export default function Names (){
         keyboardType="default"
         defaultValue={Red}
         color="black"
-        style={styles.Red}
+        style={styles.text}
         textAlign="center"
          />
     </View>
@@ -46,7 +46,7 @@ export default function Names (){
         keyboardType="default"
         defaultValue={Yellow}
         color="black"
-        style={styles.Yellow}
+        style={styles.text}
         textAlign="center"
          />
     </View>
@@ -54,32 +54,13 @@ export default function Names (){
 };
 
 const styles = StyleSheet.create({
-    Blue: {
-        fontSize: 30,
+    text: {
+        fontSize: 25,
         position: 'absolute',
-        top: '2.5%',
+        top: '5.5%',
         alignSelf: 'center',
         width: '100%',
-    },
-    Green: {
-        fontSize: 30,
-        position: 'absolute',
-        top: '2.5%',
-        alignSelf: 'center',
-        width: '100%',
-    },
-    Red: {
-        fontSize: 30,
-        position: 'absolute',
-        top: '2.5%',
-        alignSelf: 'center',
-        width: '100%',
-    },
-    Yellow: {
-        fontSize: 30,
-        position: 'absolute',
-        top: '2.5%',
-        alignSelf: 'center',
-        width: '100%',
+        color: 'white',
+        fontFamily: '04B_30__',
     },
 });
