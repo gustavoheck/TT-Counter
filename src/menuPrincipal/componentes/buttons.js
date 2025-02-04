@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import {Image, TouchableOpacity, Text} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import uno from './images/uno.gif'
-import dado from './images/dado.gif'
-import chess from './images/chess.gif'
-import truco0 from './images/truco/truco0.png'
+import uno from './images/uno.png'
+import dado from './images/dado.png'
+import chess from './images/chess.png'
+import truco from './images/truco.png'
 
 
 export default function Buttons(){
@@ -24,7 +24,7 @@ export default function Buttons(){
 
   <TouchableOpacity onPress={() => navigation.navigate("Truco")} style={{ bottom: '35%', position: 'absolute', height: '20%', width: '40%', right: '5%'}}>
     <Image
-        source={truco0}
+        source={truco}
         style={{ alignSelf: 'center', height: '100%', width: '100%', transform: [{ scale: 1},]}}
     />
   </TouchableOpacity>
