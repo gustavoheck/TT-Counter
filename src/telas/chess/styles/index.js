@@ -5,29 +5,36 @@ export const Styles = StyleSheet.create({
     secs: {
         fontSize: 60,
         color: 'white',
-        fontWeight: "bold",
-        alignSelf: 'center',
+        textAlign: 'right',
         position: "absolute",
-        top: '47.5%',
-        right: '28%'},
+        top: '52.5%',
+        left: '5.5%',
+        right: '5.5%',
+        paddingRight: '11%',
+        fontFamily: '04B_30__',
+
+    },
     mins: {
         fontSize: 60,
         color: 'white',
-        fontWeight: "bold",
-        alignSelf: 'center',
+        textAlign: 'center',
         position: "absolute",
-        top: '47.5%',
-        left: '30%'},
+        top: '52.5%',
+        left: '5.5%',
+        right: '5.5%',
+        paddingRight: '32.5%',
+        fontFamily: '04B_30__',
+    },
 
     twoPoints: 
         {
-            fontSize: 50,
-            color: 'white',
-            fontWeight: "bold",
-            alignSelf: 'center',
-            position: "absolute",
-            top: '48.5%',
-            right: '47.5%'
+        fontSize: 50,
+        color: 'white',
+        alignSelf: 'center',
+        position: "absolute",
+        top: '53.5%',
+        right: '46.5%',
+        fontFamily: "04B_30__",
         },
 
     image: 

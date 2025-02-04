@@ -9,7 +9,7 @@ export const Styles = StyleSheet.create({
         color: "white",
         alignSelf: "center",
         bottom: "55%",
-        fontWeight: 'bold',
+        fontFamily: "04B_30__",
         transform: [ {rotateY: '180deg'},{rotateX: '180deg'}]
     },
     Name2:
@@ -17,8 +17,8 @@ export const Styles = StyleSheet.create({
         position: 'absolute',
         fontSize: 30,
         color: "white",
-        fontWeight: 'bold',
         alignSelf: "center",
-        top: "50%"
+        top: "50%",
+        fontFamily: "04B_30__",
     }
 })

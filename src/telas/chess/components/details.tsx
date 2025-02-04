@@ -7,7 +7,7 @@ export default function Details(){
     return <>
         <Image
         source={Title}
-        style={{position: "absolute",transform:[{scale: 0.6}]}}
+        style={{position: "absolute",alignSelf: 'center', transform:[{scale: 0.6},]}}
         />
 
     <View style= {{
