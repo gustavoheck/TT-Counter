@@ -7,7 +7,7 @@ export const styleOthers = StyleSheet.create ({
         transform: [{scale: 0.4}],
         position: 'absolute',
         alignSelf: 'center',
-        bottom: '92%'
+        bottom: '91.75%'
     },
     buttonsText: {
         color: 'white',
