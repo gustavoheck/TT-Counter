@@ -2,6 +2,7 @@ import React from 'react'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import BootSplash from "react-native-bootsplash";
 
 import MenuPrincipal from '../menuPrincipal';
 import Dados from '../telas/dados';
@@ -13,7 +14,7 @@ const Stack = createNativeStackNavigator()
 
 export default function Rotas() {
     return(
-    <NavigationContainer>
+    <NavigationContainer onReady={() => BootSplash.hide({fade:true})}>
             <Stack.Navigator initialRouteName={MenuPrincipal} screenOptions={{headerShown: false}}>
                 <Stack.Screen name="MenuPrincipal" component={MenuPrincipal}/>
                 <Stack.Screen name="Dados" component={Dados}/>
