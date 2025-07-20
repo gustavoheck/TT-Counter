@@ -1,16 +1,15 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 
-export const stylesNos = StyleSheet.create({
-    threeNosText: {
+export const stylesCounters = StyleSheet.create({
+    threeText: {
         fontSize: 30,
-        fontFamily: "04B_30__",
         color: 'white',
+        fontFamily: "04B_30__",
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 8, height: 1},
         textShadowRadius: 10,
     },
-    oneNosText: {
+    oneText: {
         fontSize: 40,
         color: 'white',
         fontFamily: "04B_30__",
@@ -19,15 +18,17 @@ export const stylesNos = StyleSheet.create({
         textShadowRadius: 10,
         position: 'absolute'
     },
-    oneNosButton: {
+    oneButtonAdd: {
         alignSelf: 'center',
         position: 'absolute',
         justifyContent: 'center',
         alignItems: 'center',
         left: '20%',
         top: '55%',
+        borderWidth: 5,
+        borderColor: 'white',
     },
-    oneNosButtonMinus: {
+    oneButtonMinus: {
         alignSelf: 'center',
         position: 'absolute',
         justifyContent: 'center',
@@ -35,7 +36,7 @@ export const stylesNos = StyleSheet.create({
         right: '20%',
         top: '55%',
     },
-    threeNosButton: {
+    threeButtonAdd: {       
         alignSelf: 'center',
         position: 'absolute',
         justifyContent: 'center',
@@ -43,7 +44,7 @@ export const stylesNos = StyleSheet.create({
         left: '15%',
         top: '75%',
     },
-    threeNosButtonMinus: {
+    threeButtonMinus: {
         alignSelf: 'center',
         position: 'absolute',
         justifyContent: 'center',
@@ -51,7 +52,7 @@ export const stylesNos = StyleSheet.create({
         right: '15%',
         top: '75%',
     },
-    NosWins: {
+    Wins: {
         fontSize: 80,
         color: 'white',
         fontFamily: "04B_30__",
@@ -62,7 +63,7 @@ export const stylesNos = StyleSheet.create({
         alignSelf: 'center',
         top: '35%'
     },
-    pointCountNos: {
+    pointCount: {
         fontSize: 100,
         color: 'white',
         fontFamily: "04B_30__",
@@ -72,5 +73,5 @@ export const stylesNos = StyleSheet.create({
         position: 'absolute',
         alignSelf: 'center',
         top: '25%'
-    },
+      },
 }); 

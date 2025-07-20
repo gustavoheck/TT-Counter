@@ -8,7 +8,7 @@ export default function DVinte (){
     const [number, setNumber] = useState(1);
 
     const rollDice = () => {
-      const randomNumber = Math.floor(1 + Math.random() * 20);
+      const randomNumber = Math.floor(Math.random() * (20 - 1) + 2);
       setNumber(randomNumber);
     };
   
