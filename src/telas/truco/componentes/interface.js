@@ -63,7 +63,7 @@ const GamePart = () => {
   const BotoesIncrementais = ({ jogador, aumentoOuDecremento, imagem, estiloBotao, estiloTexto, text }) => {
     return <>
       <TouchableOpacity onPress={botaoOnPress(jogador, aumentoOuDecremento)} style={estiloBotao}>
-        <Image source={imagem} style={{ transform: [{ scale: 0.3 }], position: 'absolute' }} />
+        <Image source={imagem} style={{ transform: [{ scale: 0.3 }], position: 'absolute'}} />
         <Text style={estiloTexto}>{text}</Text>
       </TouchableOpacity>
     </>

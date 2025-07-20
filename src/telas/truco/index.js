@@ -6,8 +6,6 @@ import Names from "./componentes/names";
 
 import WhiteReturn from "../../globalComponents/whiteReturn";
 
-import background from "./images/background.jpg";
-
 export default function Truco (){
     return <>
   <View style={{flex: 1, backgroundColor: "#004500"}}>

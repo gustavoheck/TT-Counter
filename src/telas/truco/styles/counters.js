@@ -16,7 +16,7 @@ export const stylesCounters = StyleSheet.create({
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 8, height: 1},
         textShadowRadius: 10,
-        position: 'absolute'
+        position: 'absolute',
     },
     oneButtonAdd: {
         alignSelf: 'center',
@@ -25,7 +25,7 @@ export const stylesCounters = StyleSheet.create({
         alignItems: 'center',
         left: '20%',
         top: '55%',
-        borderWidth: 5,
+        borderWidth: 3,
         borderColor: 'white',
     },
     oneButtonMinus: {
