@@ -25,8 +25,6 @@ export const stylesCounters = StyleSheet.create({
         alignItems: 'center',
         left: '20%',
         top: '55%',
-        borderWidth: 3,
-        borderColor: 'white',
     },
     oneButtonMinus: {
         alignSelf: 'center',

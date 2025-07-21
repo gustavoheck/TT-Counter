@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 
 export const DSeisStyles = StyleSheet.create ({
@@ -7,6 +6,7 @@ export const DSeisStyles = StyleSheet.create ({
         position: 'absolute',
         height: '35%',
         width: '70%',
+        alignSelf: 'center',
     },
     image: {
         height: '80%',

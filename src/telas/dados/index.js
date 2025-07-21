@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,} from 'react-native';
+import {View} from 'react-native';
 
 import DSeis from './D6/components/DSeis';
 import DVinte from './D20/components/DVinte';
@@ -12,21 +12,21 @@ import Return from '../../globalComponents/return';
 
 import Details from './details';
 
-export default function Dados (){
-return <>
-<View style={{flex: 1,backgroundColor: "grey"}}>
-    <Details/>
-<View style={{flex: 1,flexDirection:'row',alignItems:'center',justifyContent:'center', }}>
-    <DSeis/>
-</View>
+export default function Dados() {
+    return <>
+        <View style={{ flex: 1, backgroundColor: "grey" }}>
+            <Details />
+            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', }}>
+                <DSeis />
+            </View>
 
-    <Return/>
-    <DVinte/>
-    <DDoze/>
-    <DOito/>
-    <DQuatro/>
-    <DDez/>
-</View>
-</>
+            <Return />
+            <DVinte />
+            <DDoze />
+            <DOito />
+            <DQuatro />
+            <DDez />
+        </View>
+    </>
 
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, TouchableOpacity, Image, View } from 'react-native';
+import { TouchableOpacity, Image} from 'react-native';
 import { DSeisStyles } from '../styles/DSeisStyles';
 
 import dadoUm from '../images/dado0.png';
@@ -29,11 +29,11 @@ export default function DSeis() {
   return (
     <>
       <TouchableOpacity onPress={rollDice} style={DSeisStyles.button}>
-      <Image
-        source={diceImages[number]}
-        style={DSeisStyles.image}
-        resizeMode='cover'
-      />
+        <Image
+          source={diceImages[number]}
+          style={DSeisStyles.image}
+          resizeMode='cover'
+        />
       </TouchableOpacity>
     </>
   );

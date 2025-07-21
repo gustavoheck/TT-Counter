@@ -1,25 +1,16 @@
-import React, {useState} from "react";
-import { Text, TouchableOpacity, Image} from "react-native";
+import React from "react";
 import { DVinteStyles } from "../styles/DVinteStyles";
 
 import D20 from '../images/D20.png'
+import BotaoDado from "../../componentesGerais/BotaoDado";
 
-export default function DVinte (){
-    const [number, setNumber] = useState(1);
-
-    const rollDice = () => {
-      const randomNumber = Math.floor(Math.random() * (20 - 1) + 2);
-      setNumber(randomNumber);
-    };
-  
-return  <>
-    <TouchableOpacity onPress={rollDice} style={DVinteStyles.button}>
-      <Image
-        source={D20}
-        style={DVinteStyles.image}
-        resizeMode="cover"
-      />
-      <Text style={DVinteStyles.Number}>{number}</Text>
-    </TouchableOpacity>
-</>
+export default function DVinte() {
+  return <>
+    <BotaoDado
+      minDado={1}
+      maxDado={20}
+      imagemDado={D20}
+      estiloBotao={DVinteStyles.button}
+    />
+  </>
 };
