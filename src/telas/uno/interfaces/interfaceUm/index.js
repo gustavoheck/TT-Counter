@@ -1,15 +1,48 @@
-import React from 'react';
-import SoloDuo from './componentes/soloDuo';
+import React, { useRef } from 'react';
+import { Alert, TouchableOpacity, View, Text } from 'react-native';
+
 import Details from './componentes/details';
-import Names from './componentes/names';
+import { stylesViews } from './styles/styleViews';
+import NameInputUnoIntUm from './componentes/NameInputUnoIntUm';
+import Counter from './componentes/Counter';
+import { styleOthers } from './styles/styleOthers';
 
-import Return from '../../../../globalComponents/return';
+export default function InterfaceUm() {
+  const topSideCounterRef = useRef(null);
+  const bottomSideCounterRef = useRef(null);
 
-export default function InterfaceUm(){
- return <>
-  <Return/>
-  <SoloDuo/>
-  <Details/>
-  <Names/>
-</>
+  const resetWinsOnPress = () =>
+    Alert.alert('Reset', 'Você realmente deseja resetar o placar?', [
+      {
+        text: 'Cancel',
+        onPress: () => console.log('Cancel Pressed'),
+        style: 'cancel',
+      },
+      {
+        text: 'Reset', onPress: () => {
+          topSideCounterRef.current?.resetWins();
+          bottomSideCounterRef.current?.resetWins();
+        }
+      },
+    ]);
+  
+  const ResetWins = () => {
+    return <>
+      <TouchableOpacity onPress={resetWinsOnPress} style={styleOthers.resetButton}><Text style={styleOthers.resetText}>Reset Wins</Text></TouchableOpacity>
+    </>
+  }
+
+  return <>
+    <View style={stylesViews.topSide}>
+      <NameInputUnoIntUm playerName={"PlayerUm"} />
+      <Counter ref={topSideCounterRef} />
+    </View>
+
+    <View style={stylesViews.bottomSide}>
+      <NameInputUnoIntUm playerName={"PlayerDois"} styleText={styleOthers.name} />
+      <Counter ref={bottomSideCounterRef} />
+      <ResetWins />
+    </View>
+    <Details />
+  </>
 };

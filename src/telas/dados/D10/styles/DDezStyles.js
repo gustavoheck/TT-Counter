@@ -7,7 +7,6 @@ export const DDezStyles = StyleSheet.create ({
         height: '20%',
         width: '37.5%',
         top: '77.5%',
-        right: '32.75%',
         alignSelf: 'center',
         transform: [{ scale: 0.9}],
       },

@@ -1,5 +1,5 @@
 import React from "react";
-import {Image} from "react-native";
+import {Image, View} from "react-native";
 
 import Title from "./images/title.png"
 

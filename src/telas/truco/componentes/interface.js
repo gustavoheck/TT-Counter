@@ -19,7 +19,7 @@ export default function Interface() {
 
 const GamePart = () => {
 
-  const [NosPontos, setNosPontos] = useState(1)
+  const [NosPontos, setNosPontos] = useState(0)
   const [NosWins, setNosWins] = useState(0)
   const [ElesPontos, setElesPontos] = useState(0)
   const [ElesWins, setElesWins] = useState(0)

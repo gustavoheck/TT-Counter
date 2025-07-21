@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, Text, ImageBackground, KeyboardAvoidingView, View } from "react-native";
-import Interface from "./componentes/interface";
+import Interface from "./componentes/Interface";
 import Details from "./componentes/details";
 import Names from "./componentes/names";
 

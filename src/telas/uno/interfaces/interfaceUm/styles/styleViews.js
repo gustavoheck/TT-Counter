@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 
 export const stylesViews = StyleSheet.create ({
@@ -12,6 +11,4 @@ export const stylesViews = StyleSheet.create ({
         backgroundColor: '#FF0000',
         bottom: '0%',
     },
-   
-
 });

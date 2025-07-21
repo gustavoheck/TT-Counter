@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 
-export const stylesOne = StyleSheet.create ({
+export const styleCounter = StyleSheet.create ({
     wins: {
         position: 'absolute',
         fontSize: 150, 
@@ -12,6 +12,14 @@ export const stylesOne = StyleSheet.create ({
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: 5, height: 1},
         textShadowRadius: 10,
+    },
+    buttonsText: {
+        color: 'white',
+        fontFamily: "04B_30__",
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: 5, height: 1},
+        textShadowRadius: 10,
+        fontSize: 60,
     },
     buttonAdd:{
         position: 'absolute', 
