@@ -4,7 +4,7 @@ import { Alert, TouchableOpacity, View, Text } from 'react-native';
 import Details from './componentes/Details';
 import { stylesViews } from './styles/styleViews';
 import NameInputUnoIntUm from './componentes/NameInputUnoIntUm';
-import Counter from './componentes/CounterUnoIntUm';
+import CounterUnoIntUm from './componentes/CounterUnoIntUm';
 import { styleOthers } from './styles/styleOthers';
 
 export default function InterfaceUm() {
