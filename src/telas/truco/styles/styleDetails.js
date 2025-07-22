@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const stylesDetails = StyleSheet.create({
+export const styleDetails = StyleSheet.create({
     WinsText: {
         position: "absolute",
         color: 'white',

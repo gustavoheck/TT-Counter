@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const stylesCounters = StyleSheet.create({
+export const styleCounter = StyleSheet.create({
     threeText: {
         fontSize: 30,
         color: 'white',
@@ -50,7 +50,7 @@ export const stylesCounters = StyleSheet.create({
         right: '15%',
         top: '75%',
     },
-    Wins: {
+    winsCount: {
         fontSize: 80,
         color: 'white',
         fontFamily: "04B_30__",
@@ -59,7 +59,7 @@ export const stylesCounters = StyleSheet.create({
         textShadowRadius: 10,
         position: 'absolute',
         alignSelf: 'center',
-        top: '35%'
+        top: '125%'
     },
     pointCount: {
         fontSize: 100,
@@ -70,6 +70,6 @@ export const stylesCounters = StyleSheet.create({
         textShadowRadius: 10,
         position: 'absolute',
         alignSelf: 'center',
-        top: '25%'
+        top: '18.5%'
       },
 }); 

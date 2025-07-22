@@ -1,18 +1,59 @@
-import React from "react";
-import { SafeAreaView, Text, ImageBackground, KeyboardAvoidingView, View } from "react-native";
-import Interface from "./componentes/Interface";
-import Details from "./componentes/details";
-import Names from "./componentes/names";
-
+import React, { useRef } from "react";
+import { Text, View, } from "react-native";
+//Styles
+import { styleViews } from "./styles/styleViews";
+import { styleDetails } from "./styles/styleDetails";
+//Components
 import WhiteReturn from "../../globalComponents/whiteReturn";
+import NameInputTruco from "./componentes/NameInputTruco";
+import Counter from "./componentes/Counter";
+import Details from "./componentes/Details";
+import ResetButton from "./componentes/ResetButton";
 
-export default function Truco (){
-    return <>
-  <View style={{flex: 1, backgroundColor: "#004500"}}>
-        <Names/>
-        <Interface/>
-        <Details/>
-        <WhiteReturn/>
-   </View>
-    </>
+export default function Truco() {
+  const LeftSideCounterRef = useRef(null);
+  const RightSideCounterRef = useRef(null);
+
+  return <>
+    <View style={{ flex: 1, backgroundColor: "#004500" }}>
+      <View style={styleViews.leftTopSquare}>
+        <NameInputTruco choosedName={"Eles"} />
+        <Counter ref={LeftSideCounterRef}/>
+      </View>
+      <View style={styleViews.leftBottomSquare}>
+        <Text style={styleDetails.WinsText}>Wins</Text>
+        <ResetButton
+          buttonText={"Reset Wins"}
+          confirmButtonText={"Reset"}
+          cancelButtonText={"Cancel"}
+          confirmButtonMessage={"Você realmente deseja resetar o placar?"}
+          onConfirm={() => {
+            LeftSideCounterRef.current?.resetWins();
+            RightSideCounterRef.current?.resetWins();
+          }}
+        />
+      </View>
+
+      <View style={styleViews.rightTopSquare}>
+        <NameInputTruco choosedName={"Nos"} />
+        <Counter ref={RightSideCounterRef}/>
+      </View>
+      <View style={styleViews.rightBottomSquare}>
+        <Text style={styleDetails.WinsText}>Wins</Text>
+        <ResetButton
+          buttonText={"Reset Points"}
+          confirmButtonText={"Reset"}
+          cancelButtonText={"Cancel"}
+          confirmButtonMessage={"Você realmente deseja resetar a pontuação?"}
+          onConfirm={() => {
+            LeftSideCounterRef.current?.resetPoints();
+            RightSideCounterRef.current?.resetPoints();
+          }}
+        />
+      </View>
+
+      <Details />
+      <WhiteReturn />
+    </View>
+  </>
 };

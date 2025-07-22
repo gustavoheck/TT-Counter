@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Alert, TouchableOpacity, View, Text } from 'react-native';
 
-import Details from './componentes/details';
+import Details from './componentes/Details';
 import { stylesViews } from './styles/styleViews';
 import NameInputUnoIntUm from './componentes/NameInputUnoIntUm';
 import Counter from './componentes/Counter';

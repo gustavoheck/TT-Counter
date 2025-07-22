@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Text, TouchableOpacity, Image, ImageBackground, } from "react-native";
-import { estiloBotaoDado } from "./estilosBotaoDado";
+import { estiloBotaoDado } from "./EstilosBotaoDado";
 
 export default function BotaoDado({ minDado, maxDado, imagemDado, estiloBotao, estiloNumero, estiloImagem}) {
     const [number, setNumber] = useState(1);

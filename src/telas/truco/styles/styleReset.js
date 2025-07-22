@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
-export const stylesReset = StyleSheet.create ({
-    ResetPoints: {
-        position: 'absolute',
+export const styleReset = StyleSheet.create ({
+      resetButton: {
         bottom: '2%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        position  : 'absolute'
       },
       resetText: {
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
@@ -14,10 +14,5 @@ export const stylesReset = StyleSheet.create ({
         color: 'white',
         fontFamily: "04B_30__",
         textAlign: 'center',
-      },
-      resetWins: {
-        position: 'absolute',
-        bottom: '2%',
-        alignSelf: 'center'
       },
 });
