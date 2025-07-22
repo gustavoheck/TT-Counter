@@ -6,7 +6,7 @@ import { styleDetails } from "./styles/styleDetails";
 //Components
 import WhiteReturn from "../../globalComponents/whiteReturn";
 import NameInputTruco from "./componentes/NameInputTruco";
-import Counter from "./componentes/Counter";
+import CounterTruco from "./componentes/CounterTruco";
 import Details from "./componentes/Details";
 import ResetButton from "./componentes/ResetButton";
 
@@ -18,7 +18,7 @@ export default function Truco() {
     <View style={{ flex: 1, backgroundColor: "#004500" }}>
       <View style={styleViews.leftTopSquare}>
         <NameInputTruco choosedName={"Eles"} />
-        <Counter ref={LeftSideCounterRef}/>
+        <CounterTruco ref={LeftSideCounterRef}/>
       </View>
       <View style={styleViews.leftBottomSquare}>
         <Text style={styleDetails.WinsText}>Wins</Text>
@@ -36,7 +36,7 @@ export default function Truco() {
 
       <View style={styleViews.rightTopSquare}>
         <NameInputTruco choosedName={"Nos"} />
-        <Counter ref={RightSideCounterRef}/>
+        <CounterTruco ref={RightSideCounterRef}/>
       </View>
       <View style={styleViews.rightBottomSquare}>
         <Text style={styleDetails.WinsText}>Wins</Text>

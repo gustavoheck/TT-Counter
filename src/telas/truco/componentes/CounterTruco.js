@@ -9,7 +9,7 @@ import spades from "../images/spades.png"
 import clubs from "../images/clubs.png"
 
 
-export default class Counter extends Component {
+export default class CounterTruco extends Component {
   constructor(props) {
     super(props);
     this.state = {

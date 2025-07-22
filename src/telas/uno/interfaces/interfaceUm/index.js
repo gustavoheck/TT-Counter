@@ -4,7 +4,7 @@ import { Alert, TouchableOpacity, View, Text } from 'react-native';
 import Details from './componentes/Details';
 import { stylesViews } from './styles/styleViews';
 import NameInputUnoIntUm from './componentes/NameInputUnoIntUm';
-import Counter from './componentes/Counter';
+import Counter from './componentes/CounterUnoIntUm';
 import { styleOthers } from './styles/styleOthers';
 
 export default function InterfaceUm() {
@@ -35,12 +35,12 @@ export default function InterfaceUm() {
   return <>
     <View style={stylesViews.topSide}>
       <NameInputUnoIntUm playerName={"PlayerUm"} />
-      <Counter ref={topSideCounterRef} />
+      <CounterUnoIntUm ref={topSideCounterRef} />
     </View>
 
     <View style={stylesViews.bottomSide}>
       <NameInputUnoIntUm playerName={"PlayerDois"} styleText={styleOthers.name} />
-      <Counter ref={bottomSideCounterRef} />
+      <CounterUnoIntUm ref={bottomSideCounterRef} />
       <ResetWins />
     </View>
     <Details />

@@ -3,7 +3,7 @@ import { Text, TouchableOpacity} from "react-native";
 
 import { styleCounter } from "../styles/styleCounter";
 
-export default class Counter extends Component {
+export default class CounterUnoIntUm extends Component {
   constructor() {
     super();
     this.state = { 

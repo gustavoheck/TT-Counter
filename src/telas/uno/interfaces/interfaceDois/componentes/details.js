@@ -17,9 +17,9 @@ return <>
         borderLeftWidth: 4,
         borderLeftColor: 'black',
         alignSelf: 'center',
-        height: '92.5%',
+        height: '90.5%',
         position: "absolute",
-        bottom: '0%'
+        bottom: '4%'
     }}
     />
 
