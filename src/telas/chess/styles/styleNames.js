@@ -1,9 +1,8 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 
-export const Styles = StyleSheet.create({
-    Name1:
-    {
+export const styleNames = StyleSheet.create({
+    nameOne: {
         position: 'absolute',
         fontSize: 30,
         color: "white",
@@ -12,8 +11,7 @@ export const Styles = StyleSheet.create({
         fontFamily: "04B_30__",
         transform: [ {rotateY: '180deg'},{rotateX: '180deg'}]
     },
-    Name2:
-    {
+    nameTwo: {
         position: 'absolute',
         fontSize: 30,
         color: "white",
