@@ -1,17 +1,21 @@
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import { Image, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
 import Buttons from './componentes/buttons';
-import Top from './componentes/top';
+import { styleMenu } from './styles/styleMenu';
+import tabletop from './images/tabletop.png';
 
-export default function MenuPrincipal(){
+export default function MenuPrincipal() {
+	const navigation = useNavigation();
 
-  const navigation = useNavigation()
-
-  return <>
-   <View style={{flex: 1, backgroundColor: '#261408'}}>
-     <Buttons/>
-     <Top/>
-   </View>
-  </>
+	return <>
+		<View style={{ flex: 1, backgroundColor: '#261408' }}>
+			<Image
+				style={styleMenu.imagemMenu}
+				source={tabletop}
+			/>
+			<Buttons />
+		</View>
+	</>
 };

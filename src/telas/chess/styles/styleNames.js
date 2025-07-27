@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 
 export const styleNames = StyleSheet.create({
@@ -19,4 +18,4 @@ export const styleNames = StyleSheet.create({
         top: "50%",
         fontFamily: "04B_30__",
     }
-})
+});
