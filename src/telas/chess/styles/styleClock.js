@@ -11,7 +11,6 @@ export const styleClock = StyleSheet.create({
 	},
 	timerTextContainer: {
 		top: '55.5%',
-		width: '29%',
 		maxWidth: '29%',
 		alignSelf: 'center',
 		position: "absolute",
