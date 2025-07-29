@@ -2,10 +2,10 @@ import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import uno from './images/uno.png';
-import dado from './images/dado.png';
-import chess from './images/chess.png';
-import truco from './images/truco.png';
+import uno from '../images/uno.png';
+import dado from '../images/dado.png';
+import chess from '../images/chess.png';
+import truco from '../images/truco.png';
 
 import { styleMenu } from '../styles/styleMenu';
 
