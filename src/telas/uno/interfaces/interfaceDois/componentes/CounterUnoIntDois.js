@@ -43,7 +43,7 @@ export default class CounterUnoIntDois extends Component {
 			>
 				<Image
 					source={image}
-					style={{ transform: [{ scale: scale }], position: 'absolute' }}
+					style={{ transform: [{ scale: scale }]}}
 				/>
 				<Text style={numberStyle}>{this.state.points[crownIndex]}</Text>
 			</TouchableOpacity>
@@ -56,7 +56,7 @@ export default class CounterUnoIntDois extends Component {
 				crownIndex={0}
 				buttonStyle={styleCounter.firstButton}
 				numberStyle={styleCounter.points}
-				scale={0.27}
+				scale={0.6}
 				image={coroa1}
 			/>
 
@@ -64,7 +64,7 @@ export default class CounterUnoIntDois extends Component {
 				crownIndex={1}
 				buttonStyle={styleCounter.secondButton}
 				numberStyle={styleCounter.points2r}
-				scale={0.20}
+				scale={0.4}
 				image={coroa2}
 			/>
 
@@ -72,7 +72,7 @@ export default class CounterUnoIntDois extends Component {
 				crownIndex={2}
 				buttonStyle={styleCounter.thirdButton}
 				numberStyle={styleCounter.points3r}
-				scale={0.20}
+				scale={0.4}
 				image={coroa3}
 			/>
 		</>
