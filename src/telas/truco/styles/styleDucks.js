@@ -5,7 +5,7 @@ export const styleDucks = StyleSheet.create({
 		alignSelf: 'center',
 		position: 'absolute',
 		transform: [{scale: 0.4}],
-		right: '8%',
+		right: '6%',
 		top: '135%'
 	},
 	duckM: {
