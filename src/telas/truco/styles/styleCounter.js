@@ -59,7 +59,7 @@ export const styleCounter = StyleSheet.create({
 		textShadowRadius: 10,
 		position: 'absolute',
 		alignSelf: 'center',
-		top: '125%'
+		top: '122%'
 	},
 	pointCount: {
 		fontSize: 100,

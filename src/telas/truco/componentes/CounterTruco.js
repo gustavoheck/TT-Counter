@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { TouchableOpacity, Text, Image} from "react-native";
 
 import { styleCounter } from "../styles/styleCounter";
+import Ducks from "./Ducks";
 
 import hearts from "../images/hearts.png";
 import diamonds from "../images/diamonds.png";
@@ -36,6 +37,16 @@ export default class CounterTruco extends Component {
 			</TouchableOpacity>
 		</>
 	};
+
+	DuckReturn = () => {
+		if (this.state.wins >= 1) {
+			return <>
+				<Ducks
+					duckGender={this.props.duckGender}
+				/>
+			</>
+		}
+	}
 
 	resetWins = () => {
 		this.setState({ wins: 0 });
@@ -77,6 +88,7 @@ export default class CounterTruco extends Component {
 
 			<Text style={styleCounter.pointCount}>{this.state.pontos}</Text>
 			<Text style={styleCounter.winsCount}>{this.state.wins}</Text>
+			<this.DuckReturn/>
 		</>
 	};
 };
