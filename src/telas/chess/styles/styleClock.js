@@ -7,35 +7,36 @@ export const styleClock = StyleSheet.create({
 		textAlign: 'center',
 		fontFamily: '04B_30__',
 		textAlignVertical: 'center',
-		alignSelf: 'center',
+		
 	},
 	timerTextContainer: {
 		top: '57.5%',
-		maxWidth: '29%',
 		alignSelf: 'center',
 		position: "absolute",
-		left: '13.5%',
 		flexDirection: 'row',
+		width: 279,
+		alignItems: 'center'
 	},
 	image: {
 		alignSelf: 'center',
-		resizeMode: "contain",
+		resizeMode: 'contain',
+		width: '100%',
 		flex: 1
 	},
 	firstClockButton: {
 		height: '30%',
 		top: '10%',
-		transform: [{ rotateY: '180deg' }, { rotateX: '180deg' }, { scale: 0.9 }]
+		transform: [{ rotateY: '180deg' }, { rotateX: '180deg' }, {scale: 0.9}],
 	},
 	secondClockButton: {
 		height: '30%',
 		top: '25%',
-		transform: [{ scale: 0.9 }],
+		transform: [{scale: 0.9}],
 	},
 	resetButton: {
-		top: '77.5%',
+		top: '80%',
 		alignSelf: 'center',
 		transform: [{ scale: 0.4 }],
-		position: "absolute"
+		position: "absolute",
 	}
 });
