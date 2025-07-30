@@ -10,7 +10,7 @@ export const styleReset = StyleSheet.create({
 		textShadowColor: 'rgba(0, 0, 0, 0.75)',
 		textShadowOffset: { width: 8, height: 1 },
 		textShadowRadius: 10,
-		fontSize: 19,
+		fontSize: 17,
 		color: 'white',
 		fontFamily: "04B_30__",
 		textAlign: 'center',

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styleClock = StyleSheet.create({
 	timerText: {
-		fontSize: 50,
+		fontSize: 45,
 		color: 'white',
 		textAlign: 'center',
 		fontFamily: '04B_30__',
@@ -10,11 +10,11 @@ export const styleClock = StyleSheet.create({
 		alignSelf: 'center',
 	},
 	timerTextContainer: {
-		top: '55.5%',
+		top: '57.5%',
 		maxWidth: '29%',
 		alignSelf: 'center',
 		position: "absolute",
-		left: '11.5%',
+		left: '15.5%',
 		flexDirection: 'row',
 	},
 	image: {
