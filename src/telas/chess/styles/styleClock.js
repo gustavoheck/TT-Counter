@@ -14,7 +14,7 @@ export const styleClock = StyleSheet.create({
 		maxWidth: '29%',
 		alignSelf: 'center',
 		position: "absolute",
-		left: '15.5%',
+		left: '13.5%',
 		flexDirection: 'row',
 	},
 	image: {
