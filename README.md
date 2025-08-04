@@ -39,3 +39,6 @@ The Chess Screen serves as a chess clock, helping you to play with a timer whito
 - **React Navigation**  
   [Web Page](https://reactnavigation.org/ "React Navigation")
 
+- **React Native Sound**  
+  [Web Page](https://www.npmjs.com/package/react-native-sound/ "React Native Sound")
+
