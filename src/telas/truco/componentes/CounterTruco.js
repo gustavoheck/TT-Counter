@@ -24,8 +24,8 @@ export default class CounterTruco extends Component {
 			this.setState({ pontos: this.state.pontos + (aumentoOuDecremento) });
 		};
 		if (this.state.pontos + (aumentoOuDecremento) >= 12) {
-			this.setState({ pontos: 0 });
 			this.setState({ wins: this.state.wins + 1 });
+			this.props.reset();
 		};
 	};
 

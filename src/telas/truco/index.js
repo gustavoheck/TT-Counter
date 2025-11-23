@@ -14,11 +14,16 @@ export default function Truco() {
 	const LeftSideCounterRef = useRef(null);
 	const RightSideCounterRef = useRef(null);
 
+	const resetAllPoints = () => {
+		LeftSideCounterRef.current?.resetPoints();
+		RightSideCounterRef.current?.resetPoints();
+	};
+
 	return <>
 		<View style={{ flex: 1, backgroundColor: "#004500" }}>
 			<View style={styleViews.leftTopSquare}>
 				<NameInputTruco choosedName={"Eles"} />
-				<CounterTruco ref={LeftSideCounterRef} duckGender="F"/>
+				<CounterTruco ref={LeftSideCounterRef} duckGender="F" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.leftBottomSquare}>
 				<Text style={styleDetails.WinsText}>Wins</Text>
@@ -36,7 +41,7 @@ export default function Truco() {
 
 			<View style={styleViews.rightTopSquare}>
 				<NameInputTruco choosedName={"Nos"} />
-				<CounterTruco ref={RightSideCounterRef} duckGender="M"/>
+				<CounterTruco ref={RightSideCounterRef} duckGender="M" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.rightBottomSquare}>
 				<Text style={styleDetails.WinsText}>Wins</Text>
@@ -46,8 +51,7 @@ export default function Truco() {
 					cancelButtonText={"Cancel"}
 					confirmButtonMessage={"Você realmente deseja resetar a pontuação?"}
 					onConfirm={() => {
-						LeftSideCounterRef.current?.resetPoints();
-						RightSideCounterRef.current?.resetPoints();
+						resetAllPoints();
 					}}
 				/>
 			</View>
