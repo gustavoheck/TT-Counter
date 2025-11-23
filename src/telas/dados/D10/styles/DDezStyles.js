@@ -4,11 +4,11 @@ export const DDezStyles = StyleSheet.create({
 	button: {
 		overflow: 'hidden',
 		position: 'absolute',
-		height: '20%',
-		width: '37.5%',
+		height: '22%',
+		width: '40.5%',
 		top: '77.5%',
 		alignSelf: 'center',
-		transform: [{ scale: 0.9 }]
+		transform: [{ scale: 0.8 }]
 	},
 	number: {
 		position: 'absolute',

@@ -41,25 +41,17 @@ export const styleCounter = StyleSheet.create({
 	firstButton: {
 		top: '12.5%',
 		alignSelf: 'center',
-		alignItems: 'center',
-		justifyContent: 'center',
 		borderColor: 'black',
 		position: 'absolute',
 	},
 	secondButton: {
 		top: '50%',
 		right: '35%',
-		alignSelf: 'center',
-		alignItems: 'center',
-		justifyContent: 'center',
 		position: 'absolute',
 	},
 	thirdButton: {
 		top: '50%',
 		left: '35%',
-		alignSelf: 'center',
-		alignItems: 'center',
-		justifyContent: 'center',
 		position: 'absolute',
 	}
 });

@@ -4,8 +4,8 @@ export const DOitoStyles = StyleSheet.create({
 	button: {
 		overflow: 'hidden',
 		position: 'absolute',
-		height: '18.5%',
-		width: '30%',
+		height: '19.5%',
+		width: '32%',
 		top: '70%',
 		alignSelf: 'center',
 		left: '0%',

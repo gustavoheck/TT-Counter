@@ -14,8 +14,10 @@ export const styleDetails = StyleSheet.create({
 	},
 	Title: {
 		position: "absolute",
-		transform: [{ scale: 0.3 }],
-		bottom: '91.5%'
+		transform: [{ scale: 0.5 }],
+		alignSelf: 'center',
+		width: '60%',
+		height: '5%'
 	},
 	midVerticalLine: {
 		borderLeftWidth: 2,

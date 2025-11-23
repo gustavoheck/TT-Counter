@@ -8,6 +8,11 @@ import title from "../images/trucoTitle.png";
 export default function Details() {
 	return <>
 
+		<Image
+			source={title}
+			style={styleDetails.Title}
+		/>
+
 		<View style={styleDetails.midVerticalLine} />
 
 		<View
@@ -23,10 +28,6 @@ export default function Details() {
 				borderColor: 'white',
 				top: '4.5%'
 			}}
-		/>
-		<Image
-			source={title}
-			style={styleDetails.Title}
 		/>
 	</>
 };

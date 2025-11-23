@@ -3,8 +3,8 @@ import { StyleSheet} from "react-native";
 export const DQuatroStyles = StyleSheet.create({
 	button: {
 		position: 'absolute',
-		height: '14.5%',
-		width: '30%',
+		height: '15.5%',
+		width: '32%',
 		top: '71.5%',
 		alignSelf: 'center',
 		right: '0%',

@@ -22,7 +22,7 @@ export default function Truco() {
 	return <>
 		<View style={{ flex: 1, backgroundColor: "#004500" }}>
 			<View style={styleViews.leftTopSquare}>
-				<NameInputTruco choosedName={"Eles"} />
+				<NameInputTruco choosedName={"Nos"} />
 				<CounterTruco ref={LeftSideCounterRef} duckGender="F" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.leftBottomSquare}>
@@ -40,7 +40,7 @@ export default function Truco() {
 			</View>
 
 			<View style={styleViews.rightTopSquare}>
-				<NameInputTruco choosedName={"Nos"} />
+				<NameInputTruco choosedName={"Eles"} />
 				<CounterTruco ref={RightSideCounterRef} duckGender="M" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.rightBottomSquare}>

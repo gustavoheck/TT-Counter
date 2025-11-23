@@ -10,8 +10,9 @@ export default function Details() {
 				color: 'black',
 				position: 'absolute',
 				alignSelf: 'center',
-				transform: [{ scale: 0.4 }],
-				bottom: '91.75%'
+				transform: [{ scale: 0.7 }],
+				width: '60%',
+				height: '5%'
 			}} />
 
 		<View style={{

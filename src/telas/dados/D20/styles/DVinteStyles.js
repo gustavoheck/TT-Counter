@@ -10,11 +10,5 @@ export const DVinteStyles = StyleSheet.create({
 		left: '0%',
 		top: '5%',
 		transform: [{ scale: 0.85 }]
-	},
-	image: {
-		height: '100%',
-		width: '100%',
-		alignItems: 'center',
-		flex: 1
 	}
 });

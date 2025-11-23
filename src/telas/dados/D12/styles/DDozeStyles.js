@@ -4,8 +4,8 @@ export const DDozeStyles = StyleSheet.create({
 	button: {
 		overflow: 'hidden',
 		position: 'absolute',
-		height: '25.5%',
-		width: '50%',
+		height: '26.5%',
+		width: '51%',
 		top: '5%',
 		alignSelf: 'center',
 		right: '0%',
