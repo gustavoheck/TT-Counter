@@ -1,10 +1,10 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 
-import Rotas from './src/rotas';
+import Routes from './src/routes';
 
 export default function App(){
   return <>
-    <Rotas/>
+    <Routes/>
   </>
 }
