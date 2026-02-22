@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Text, TouchableOpacity, ImageBackground, } from "react-native";
-import { DiceButtonStyles } from "./DiceButtonStyles";
+import { styleDiceButton } from "../styles/styleDiceButton";
 
 export default function DiceButton({ minNumber, maxNumber, diceImage, diceStyle, numberStyle, diceImageStyle }) {
 	const [number, setNumber] = useState(1);
@@ -12,11 +12,11 @@ export default function DiceButton({ minNumber, maxNumber, diceImage, diceStyle,
 
 	if (diceImageStyle === undefined || diceImageStyle === null || numberStyle === undefined || numberStyle === null) {
 		if (numberStyle === undefined || numberStyle === null) {
-			numberStyle = DiceButtonStyles.number;
+			numberStyle = styleDiceButton.number;
 
 		};
 		if (diceImageStyle === undefined || diceImageStyle === null) {
-			diceImageStyle = DiceButtonStyles.image;
+			diceImageStyle = styleDiceButton.image;
 		};
 	};
 

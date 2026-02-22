@@ -9,24 +9,13 @@ export default function Details() {
 
 		<Image
 			source={title}
-			style={styleDetails.Title}
+			style={styleDetails.title}
 		/>
 
 		<View style={styleDetails.midVerticalLine} />
 
-		<View
-			style={{
-				borderWidth: 1,
-				borderColor: 'white',
-				top: '60%'
-			}}
-		/>
-		<View
-			style={{
-				borderWidth: 1,
-				borderColor: 'white',
-				top: '4.5%'
-			}}
-		/>
+		<View style={styleDetails.winsHorizontalLine} />
+		
+		<View style={styleDetails.titleHorizontalLine} />
 	</>
 };

@@ -2,21 +2,14 @@ import { Image, View } from "react-native";
 
 import Title from "../images/title.png";
 
+import { styleDetails } from "../styles/styleDetails";
+
 export default function Details() {
 	return <>
 		<Image
 			source={Title}
-			style={{ position: "absolute", alignSelf: 'center', transform: [{ scale: 0.6 },] }}
+			style={styleDetails.titleImage}
 		/>
-
-		<View style={{
-			borderBottomWidth: 4,
-			borderBottomColor: 'white',
-			position: "absolute",
-			alignSelf: 'center',
-			top: '47.5%',
-			width: '100%',
-		}}
-		/>
+		<View style={styleDetails.horizontalDivider} />
 	</>
 };

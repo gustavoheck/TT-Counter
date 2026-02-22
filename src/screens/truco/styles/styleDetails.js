@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export const styleDetails = StyleSheet.create({
-	WinsText: {
+	winsText: {
 		position: "absolute",
 		color: 'white',
 		fontFamily: "04B_30__",
@@ -12,7 +12,7 @@ export const styleDetails = StyleSheet.create({
 		alignSelf: 'center',
 		top: "2%"
 	},
-	Title: {
+	title: {
 		position: "absolute",
 		transform: [{ scale: 0.5 }],
 		alignSelf: 'center',
@@ -26,5 +26,15 @@ export const styleDetails = StyleSheet.create({
 		position: "absolute",
 		alignSelf: 'center',
 		bottom: '0%'
+	},
+	winsHorizontalLine: {
+		borderWidth: 1,
+		borderColor: 'white',
+		top: '60%'
+	},
+	titleHorizontalLine: {
+		borderWidth: 1,
+		borderColor: 'white',
+		top: '4.5%'
 	}
 });

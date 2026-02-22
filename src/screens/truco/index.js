@@ -26,7 +26,7 @@ export default function Truco() {
 				<CounterTruco ref={LeftSideCounterRef} duckGender="F" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.leftBottomSquare}>
-				<Text style={styleDetails.WinsText}>Wins</Text>
+				<Text style={styleDetails.winsText}>Wins</Text>
 				<ResetButton
 					buttonText={"Reset Wins"}
 					confirmButtonText={"Reset"}
@@ -44,7 +44,7 @@ export default function Truco() {
 				<CounterTruco ref={RightSideCounterRef} duckGender="M" reset={() => {resetAllPoints()}}/>
 			</View>
 			<View style={styleViews.rightBottomSquare}>
-				<Text style={styleDetails.WinsText}>Wins</Text>
+				<Text style={styleDetails.winsText}>Wins</Text>
 				<ResetButton
 					buttonText={"Reset Points"}
 					confirmButtonText={"Reset"}

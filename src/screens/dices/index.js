@@ -11,11 +11,13 @@ import ReturnButton from '../../globalComponents/ReturnButton';
 
 import Details from './Details';
 
+import { styleMain } from './styles/styleMain';
+
 export default function Dices() {
 	return <>
-		<View style={{ flex: 1, backgroundColor: "grey" }}>
+		<View style={styleMain.mainContainer}>
 			<Details/>
-			<View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', }}>
+			<View style={styleMain.d6Container}>
 				<D6/>
 			</View>
 			<ReturnButton/>
