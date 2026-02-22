@@ -1,16 +1,13 @@
-import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
+
+import { styleLines } from "../styles/styleLines";
 
 export default function Lines() {
 
 	return <>
-		<View style={{ height: '100%', width: '100%', position: 'absolute' }}>
-			<View style={{
-				borderLeftWidth: 4,
-				borderLeftColor: 'white',
-				height: '100%',
-				alignSelf: 'center',
-			}} />
+		<View style={styleLines.container}>
+			<Text style={styleLines.title}>SELECT PLAYERS:</Text>
+			<View style={styleLines.divider} />
 		</View>
 	</>
 };
