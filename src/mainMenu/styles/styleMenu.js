@@ -5,42 +5,39 @@ export const styleMenu = StyleSheet.create({
 		alignSelf: 'center',
 		height: '100%',
 		width: '100%',
-		transform: [{ scale: 1 }]
 	},
-	diceButton: {
-		bottom: '35%',
-		position: 'absolute',
-		height: '20%',
+	menuButton: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+		aspectRatio: 1,
 		width: '40%',
-		left: '5%'
-	},
-	trucoButton: {
-		bottom: '35%',
-		position: 'absolute',
-		height: '20%',
-		width: '40%',
-		right: '5%'
-	},
-	genericButton: {
-		bottom: '10%',
-		position: 'absolute',
-		height: '20%',
-		width: '40%',
-		left: '5%'
-	},
-	chessButton: {
-		bottom: '10%',
-		position: 'absolute',
-		height: '20%',
-		width: '40%',
-		right: '5%'
+		height: '40%', 
+		margin: '5%',
+		marginTop: '12.5%',
 	},
 	menuImage: {
 		alignSelf: 'center',
-		position: 'absolute',
-		height: '50%',
-		width: '110%',
-		bottom: '55%',
-		transform: [{ scale: 0.80}]
+		height: '40%',
+		width: '100%',
+		transform: [{ scale: 0.90}]
+	},
+	placeholder: {
+		color: 'white',
+		fontFamily: "04B_30__",
+		fontSize: 30,
+		textAlign: 'center',
+  		marginTop: '2.5%',
+	},
+	buttonsContainer: {
+		flexWrap: 'wrap',
+		flex: 1,
+		flexDirection: 'row',
+	},
+	menuContainer : {
+		display: 'flex', 
+		backgroundColor: '#261408',
+		height: '100%', 
 	}
 });

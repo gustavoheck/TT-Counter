@@ -9,7 +9,7 @@ export default function MainMenu() {
 	const navigation = useNavigation();
 
 	return <>
-		<View style={{ flex: 1, backgroundColor: '#261408' }}>
+		<View style={styleMenu.menuContainer}>
 			<Image
 				style={styleMenu.menuImage}
 				source={tabletopMenuIcon}
