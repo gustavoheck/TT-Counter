@@ -14,10 +14,11 @@ export const styleDetails = StyleSheet.create({
 	},
 	title: {
 		position: "absolute",
-		transform: [{ scale: 0.5 }],
 		alignSelf: 'center',
-		width: '60%',
-		height: '5%'
+        color: 'white',
+		fontFamily: "04B_30__",
+		fontSize: 30,
+        marginTop: '1%',
 	},
 	midVerticalLine: {
 		borderLeftWidth: 2,

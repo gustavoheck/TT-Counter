@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
 
 export const styleDetails = StyleSheet.create({
-    titleImage: {
-        position: 'absolute',
-        alignSelf: 'center',
-        transform: [{ scale: 0.6 }],
+    title: {
+        position: "absolute",
+		alignSelf: 'center',
+        color: '#cab815',
+		fontFamily: "04B_30__",
+		fontSize: 57.5,
+        marginTop: '5%',
     },
     horizontalDivider: {
         borderBottomWidth: 4,

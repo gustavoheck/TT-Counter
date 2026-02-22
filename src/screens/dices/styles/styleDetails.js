@@ -2,10 +2,10 @@ import { StyleSheet } from "react-native";
 
 export const styleDetails = StyleSheet.create ({
     title: {
-        position: "absolute",
-		transform: [{ scale: 0.7 }],
 		alignSelf: 'center',
-		width: '60%',
-		height: '6%'
+        color: 'black',
+		fontFamily: "04B_30__",
+		fontSize: 37.5,
+        marginTop: '1.5%',
 	}
 });
