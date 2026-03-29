@@ -1,0 +1,54 @@
+{
+    "mainMenu": {
+        "dicesPlaceholder": "Dices",
+        "trucoPlaceholder": "Truco",
+        "otherGamesPlaceholder": "Other Games",
+        "chessPlaceholder": "Chess"
+    },
+    "screensDefault": {
+        "playerOneNameInput": "Player One",
+        "playerTwoNameInput": "Player Two",
+        "wins": "Wins"
+    },
+    "truco": {
+        "we": "We",
+        "they": "They",
+        "resetDefault": {
+            "cancelButtonText": "Cancel",
+            "confirmButtonText": "Reset"
+        },
+        "resetWins": {
+            "buttonAndAlertTitle": "Reset Wins",
+            "confirmButtonMessage": "Do you really want to reset the the wins scoreboard?"
+        },
+        "resetPoints": {
+            "buttonAndAlertTitle": "Reset Points",
+            "confirmButtonMessage": "Do you really want to reset the the points scoreboard?"
+        }
+    },
+    "generic": {
+        "genericDefault": {
+            "title": "Generic"
+        },
+        "genericMenu": {
+            "menuPlaceholder": "SELECT PLAYERS:"
+        },
+        "genericScoreboardsDefault": {
+            "resetWins": "Reset Wins",
+            "resetAlert": "Do you really want to reset all scoreboards?",
+            "resetAlertCancel": "Cancel",
+            "resetAlertReset": "Reset"
+        },
+        "genericFourPlayers": {
+            "blue": "Blue",
+            "green": "Green",
+            "red": "Red",
+            "yellow": "Yellow"
+        }
+    },
+    "chess": {
+        "playerOneWinMessage": "Player One has winned by time!",
+        "playerTwoWinMessage": "Player Two has winned by time!",
+        "winCongratulations": "Congratulations!"
+    }
+}

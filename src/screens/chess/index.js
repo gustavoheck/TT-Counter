@@ -37,7 +37,7 @@ export default function Chess() {
 					clockOneRef.current?.stopTimer()
 					clockTwoRef.current?.startTimer()
 				}}
-				winMessage={"O jogador dois ganhou por tempo!"}
+				winMessage={"Player Two has winned by time!"}
 			/>
 			<ChessNameInput
 				choosedName={"Player Two"}
@@ -50,7 +50,7 @@ export default function Chess() {
 					clockTwoRef.current?.stopTimer()
 					clockOneRef.current?.startTimer()
 				}}
-				winMessage={"O jogador um ganhou por tempo!"}
+				winMessage={"Player One has winned by time!"}
 			/>
 			<TouchableOpacity style={styleClock.resetButton} onPress={reset}>
 				<Image

@@ -28,10 +28,11 @@ export default function Truco() {
 			<View style={styleViews.leftBottomSquare}>
 				<Text style={styleDetails.winsText}>Wins</Text>
 				<ResetButton
-					buttonText={"Reset Wins"}
-					confirmButtonText={"Reset"}
+					buttonTitle={"Reset Wins"}
+					alertTitle={"Reset Wins"}
 					cancelButtonText={"Cancel"}
-					confirmButtonMessage={"Você realmente deseja resetar o placar?"}
+					confirmButtonText={"Reset"}
+					confirmButtonMessage={"Do you really want to reset the the wins scoreboard?"}
 					onConfirm={() => {
 						LeftSideCounterRef.current?.resetWins();
 						RightSideCounterRef.current?.resetWins();
@@ -46,10 +47,11 @@ export default function Truco() {
 			<View style={styleViews.rightBottomSquare}>
 				<Text style={styleDetails.winsText}>Wins</Text>
 				<ResetButton
-					buttonText={"Reset Points"}
-					confirmButtonText={"Reset"}
+					buttonTitle={"Reset Points"}
+					alertTitle={"Reset Points"}
 					cancelButtonText={"Cancel"}
-					confirmButtonMessage={"Você realmente deseja resetar a pontuação?"}
+					confirmButtonText={"Reset"}
+					confirmButtonMessage={"Do you really want to reset the the points scoreboard?"}
 					onConfirm={() => {
 						resetAllPoints();
 					}}

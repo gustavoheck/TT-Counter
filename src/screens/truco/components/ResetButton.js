@@ -3,29 +3,30 @@ import { Alert, Text, TouchableOpacity } from "react-native";
 import { styleReset } from "../styles/styleReset";
 
 export default function ResetButton({
-    buttonText = "Botão",
-    confirmButtonText = "Confirm",
+    buttonTitle = "Button",
+    alertTitle = "Confirm",
     cancelButtonText = "Cancel",
-    confirmButtonMessage = "Você realmente deseja resetar?",
+    confirmButtonText = "Reset",
+    confirmButtonMessage = "Do you really want to reset all the scoreboards?",
     onConfirm
 }) {
 
     if (onConfirm === undefined || onConfirm === null) {
-        console.error("É necessário definir uma função de confirmação");
+        console.error("It's necessary to define a function for confirmation!");
     };
 
     const resetAlert = () => {
-        Alert.alert(confirmButtonText, confirmButtonMessage, [
+        Alert.alert(alertTitle, confirmButtonMessage, [
             {
                 text: cancelButtonText,
                 onPress: () => console.log('Cancel Pressed'),
                 style: 'cancel',
             },
-            { text: 'Reset', onPress: () => { onConfirm() } },
+            { text: confirmButtonText, onPress: () => { onConfirm() } },
         ])
     };
 
     return <>
-        <TouchableOpacity onPress={resetAlert} style={styleReset.resetButton}><Text style={styleReset.resetText}>{buttonText}</Text></TouchableOpacity>
+        <TouchableOpacity onPress={resetAlert} style={styleReset.resetButton}><Text style={styleReset.resetText}>{buttonTitle}</Text></TouchableOpacity>
     </>
 };

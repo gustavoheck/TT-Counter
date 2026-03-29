@@ -15,7 +15,7 @@ export default function FourPlayersInterface() {
 	const counterYellow = useRef(null);
 
 	const resetWinsOnPress = () =>
-		Alert.alert('Reset Wins', 'Você realmente deseja resetar os placares?', [
+		Alert.alert('Reset Wins', 'Do you really want to reset all scoreboards?', [
 			{
 				text: 'Cancel',
 				onPress: () => console.log('Cancel Pressed'),

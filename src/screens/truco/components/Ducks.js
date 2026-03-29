@@ -33,7 +33,7 @@ export default function Ducks({ duckGender = 'M' }) {
 	} else {
 		return <>
 			<DuckModel image={maleDuck} styleDuck={styleDucks.duckM} sound={'quackm.mp3'}/>
-			{console.error("Genero do pato não selecionado ou foi definido um genero inválido")}
+			{console.error("The type of duck wasn't defined or wasn't selected a valid type! (Valid types: F, M)")}
 		</>
 	}
 };

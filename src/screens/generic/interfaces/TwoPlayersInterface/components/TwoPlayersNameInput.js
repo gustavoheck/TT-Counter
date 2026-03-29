@@ -5,7 +5,7 @@ import { TextInput, StyleSheet } from "react-native";
 export default function TwoPlayersNameInput({ playerName, styleText }) {
 
 	if (playerName == "" || playerName == null || playerName == undefined) {
-		console.error("É necessário definir um nome de jogador");
+		console.error("You need to define a player name!");
 	}
 
 	const [player, setPlayer] = useState();

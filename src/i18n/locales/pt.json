@@ -1,0 +1,54 @@
+{
+    "mainMenu": {
+        "dicesPlaceholder": "Dados",
+        "trucoPlaceholder": "Truco",
+        "otherGamesPlaceholder": "Outros Jogos",
+        "chessPlaceholder": "Xadrez"
+    },
+    "screensDefault": {
+        "playerOneNameInput": "Player Um",
+        "playerTwoNameInput": "Player Dois",
+        "wins": "Vitorias"
+    },
+    "truco": {
+        "we": "Nos",
+        "they": "Eles",
+        "resetDefault": {
+            "cancelButtonText": "Cancelar",
+            "confirmButtonText": "Resetar"
+        },
+        "resetWins": {
+            "buttonAndAlertTitle": "Resetar Vitorias",
+            "confirmButtonMessage": "Você realmente deseja resetar todos os placares de vitória?"
+        },
+        "resetPoints": {
+            "buttonAndAlertTitle": "Resetar Pontos",
+            "confirmButtonMessage": "Você realmente deseja resetar todos os placares de pontos?"
+        }
+    },
+    "generic": {
+        "genericDefault": {
+            "title": "Generico"
+        },
+        "genericMenu": {
+            "menuPlaceholder": "SELECIONAR JOGADORES:"
+        },
+        "genericScoreboardsDefault": {
+            "resetWins": "Resetar Vitórias",
+            "resetAlert": "Você realmente deseja resetar todos os placares?",
+            "resetAlertCancel": "Cancelar",
+            "resetAlertReset": "Resetar"
+        },
+        "genericFourPlayers": {
+            "blue": "Azul",
+            "green": "Verde",
+            "red": "Vermelho",
+            "yellow": "Amarelo"
+        }
+    },
+    "chess": {
+        "playerOneWinMessage": "O Jogador Um ganhou por tempo!",
+        "playerTwoWinMessage": "O Jogador Dois ganhou por tempo!",
+        "winCongratulations": "Congratulations!"
+    }
+}
