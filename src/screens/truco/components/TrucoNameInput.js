@@ -5,7 +5,7 @@ export default function TrucoNameInput({ choosedName }) {
 	const [name, setName] = useState();
 
 	if (choosedName == undefined) {
-		console.error("É necessário definir um nome de jogador");
+		console.error("It is necessary to define a player name");
 	};
 
 	return <>

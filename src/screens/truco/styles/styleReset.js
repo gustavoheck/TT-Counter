@@ -4,7 +4,8 @@ export const styleReset = StyleSheet.create({
 	resetButton: {
 		bottom: '2%',
 		alignSelf: 'center',
-		position: 'absolute'
+		position: 'absolute',
+		maxWidth: '50%'
 	},
 	resetText: {
 		textShadowColor: 'rgba(0, 0, 0, 0.75)',
