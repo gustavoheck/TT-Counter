@@ -2,7 +2,7 @@
     "mainMenu": {
         "dicesPlaceholder": "Dados",
         "trucoPlaceholder": "Truco",
-        "otherGamesPlaceholder": "Outros Jogos",
+        "genericPlaceholder": "Outros Jogos",
         "chessPlaceholder": "Xadrez"
     },
     "screensDefault": {

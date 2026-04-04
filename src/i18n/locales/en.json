@@ -2,7 +2,7 @@
     "mainMenu": {
         "dicesPlaceholder": "Dices",
         "trucoPlaceholder": "Truco",
-        "otherGamesPlaceholder": "Other Games",
+        "genericPlaceholder": "Other Games",
         "chessPlaceholder": "Chess"
     },
     "screensDefault": {

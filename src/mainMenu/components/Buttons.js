@@ -1,5 +1,6 @@
 import { Image, TouchableOpacity, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 
 import generic from '../images/generic.png';
 import dices from '../images/dices.png';
@@ -10,6 +11,7 @@ import { styleMenu } from '../styles/styleMenu';
 
 export default function Buttons() {
 	const navigation = useNavigation();
+	const { t } = useTranslation();
 
 	const MenuButton = ({ buttonNavigation, buttonStyle, image, placeholder }) => {
 		return <>
@@ -29,25 +31,25 @@ export default function Buttons() {
 				buttonNavigation={"Dices"}
 				buttonStyle={styleMenu.menuButton}
 				image={dices}
-				placeholder={"Dices"}
+				placeholder={t('mainMenu.dicesPlaceholder')}
 			/>
 			<MenuButton
 				buttonNavigation={"Truco"}
 				buttonStyle={styleMenu.menuButton}
 				image={truco}
-				placeholder={"Truco"}
+				placeholder={t('mainMenu.trucoPlaceholder')}
 			/>
 			<MenuButton
 				buttonNavigation={"Generic"}
 				buttonStyle={styleMenu.menuButton}
 				image={generic}
-				placeholder={"Other Games"}
+				placeholder={t('mainMenu.genericPlaceholder')}
 			/>
 			<MenuButton
 				buttonNavigation={"Chess"}
 				buttonStyle={styleMenu.menuButton}
 				image={chess}
-				placeholder={"Chess"}
+				placeholder={t('mainMenu.chessPlaceholder')}
 			/>
 		</View>
 	</>
