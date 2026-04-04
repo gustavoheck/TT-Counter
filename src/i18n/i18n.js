@@ -1,5 +1,7 @@
+import * as RNLocalize from "react-native-localize";
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
 
 import pt from './locales/pt.json';
 import en from './locales/en.json';
@@ -14,13 +16,13 @@ const resources = {
 };
 
 const getDeviceLanguage = () => {
-  const deviceLanguage =
-    Platform.OS === 'ios'
-      ? NativeModules.LanguageManager.localeIdentifier
-      : NativeModules.I18nManager.localeIdentifier;
-  
-
-  return deviceLanguage.split('_')[0];
+    const locales = RNLocalize.getLocales();
+    
+    if (locales && locales.length > 0) {
+        return locales[0].languageCode;
+    }
+    
+    return 'en';
 };
 
 i18n
