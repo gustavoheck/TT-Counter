@@ -53,5 +53,16 @@ export const styleCounter = StyleSheet.create({
 		top: '50%',
 		left: '35%',
 		position: 'absolute',
-	}
+	},
+    guideText: {
+        color: 'white',
+		fontSize: 12.5,
+		fontFamily: '04B_30__',
+		alignSelf: 'center',
+		textAlign: 'center',
+		top: "95%",
+		textShadowColor: 'rgba(0, 0, 0, 0.75)',
+		textShadowOffset: { width: 0.5, height: 1.5 },
+		textShadowRadius: 10,
+    }
 });

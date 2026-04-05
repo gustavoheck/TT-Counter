@@ -8,6 +8,7 @@ import { styleReset } from "./styles/styleReset";
 import Details from "./components/Details";
 import FourPlayerCounter from "./components/FourPlayersCounter";
 import FourPlayersNameInput from "./components/FourPlayersNameInput";
+import { styleCounter } from "./styles/styleCounter";
 
 export default function FourPlayersInterface() {
 	const { t } = useTranslation()
@@ -47,11 +48,13 @@ export default function FourPlayersInterface() {
 		<View style={styleViews.blue}>
 			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.blue')} />
 			<FourPlayerCounter ref={counterBlue} />
+			<Text style={styleCounter.guideText}>Press to Increase</Text>
 		</View>
 
 		<View style={styleViews.green}>
 			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.green')} />
 			<FourPlayerCounter ref={counterGreen} />
+			<Text style={styleCounter.guideText}>Hold to Decrease</Text>
 		</View>
 
 		<View style={styleViews.red}>
