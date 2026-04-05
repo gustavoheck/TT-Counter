@@ -2,6 +2,7 @@ import { D20Styles } from "../styles/D20Styles";
 
 import D20Image from '../images/D20Image.png';
 import DiceButton from "../../generalComponents/DiceButton";
+import { DiceButtonStyles } from "../../generalComponents/DiceButtonStyles";
 
 export default function D20() {
 	return <>
@@ -9,7 +10,7 @@ export default function D20() {
 			minNumber={1}
 			maxNumber={20}
 			diceImage={D20Image}
-			diceStyle={D20Styles.button}
+			placeholder={"D20"}
 		/>
 	</>
 };

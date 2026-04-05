@@ -2,6 +2,7 @@ import { D10Styles } from "../styles/D10Styles";
 
 import D10Image from '../images/D10Image.png';
 import DiceButton from "../../generalComponents/DiceButton";
+import { DiceButtonStyles } from "../../generalComponents/DiceButtonStyles";
 
 export default function D10() {
 	return <>
@@ -9,8 +10,7 @@ export default function D10() {
 			minNumber={1}
 			maxNumber={10}
 			diceImage={D10Image}
-			diceStyle={D10Styles.button}
-			numberStyle={D10Styles.number}
+			placeholder={"D10"}
 		/>
 	</>
 };

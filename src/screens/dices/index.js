@@ -16,17 +16,24 @@ import { styleMain } from './styles/styleMain';
 export default function Dices() {
 	return <>
 		<View style={styleMain.mainContainer}>
-			<Details/>
-			<View style={styleMain.d6Container}>
-				<D6/>
-			</View>
 			<ReturnButton/>
-
-			<D20/>
-			<D12/>
-			<D8/>
-			<D4/>
-			<D10/>
+			<Details/>
+			<View style={styleMain.centralizerContainer}>
+				<View style={styleMain.dicesContainer}>
+					<View style={styleMain.topDicesContainer}>
+						<D20/>
+						<D12/>
+					</View>
+					<View style={styleMain.d6Container}>
+						<D6/>
+					</View>
+					<View style={styleMain.bottomDicesContainer}>
+						<D8/>
+						<D10/>
+						<D4/>
+					</View>
+				</View>
+			</View>
 		</View>
 	</>
 };

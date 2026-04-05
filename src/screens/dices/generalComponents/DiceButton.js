@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Text, TouchableOpacity, ImageBackground, } from "react-native";
-import { styleDiceButton } from "../styles/styleDiceButton";
+import { DiceButtonStyles } from "./DiceButtonStyles";
 
-export default function DiceButton({ minNumber, maxNumber, diceImage, diceStyle, numberStyle, diceImageStyle }) {
+export default function DiceButton
+({ minNumber, maxNumber, diceImage, diceNumber, placeholder}){
+
 	const [number, setNumber] = useState(1);
 
 	const rollDice = () => {
@@ -10,7 +12,7 @@ export default function DiceButton({ minNumber, maxNumber, diceImage, diceStyle,
 		setNumber(randomNumber);
 	};
 
-	if (diceImageStyle === undefined || diceImageStyle === null || numberStyle === undefined || numberStyle === null) {
+	/* if (diceImageStyle === undefined || diceImageStyle === null || numberStyle === undefined || numberStyle === null) {
 		if (numberStyle === undefined || numberStyle === null) {
 			numberStyle = styleDiceButton.number;
 
@@ -18,17 +20,18 @@ export default function DiceButton({ minNumber, maxNumber, diceImage, diceStyle,
 		if (diceImageStyle === undefined || diceImageStyle === null) {
 			diceImageStyle = styleDiceButton.image;
 		};
-	};
+	}; */
 
 	return <>
-		<TouchableOpacity onPress={rollDice} style={diceStyle}>
+		<TouchableOpacity onPress={rollDice} style={DiceButtonStyles.button}>
 			<ImageBackground
 				source={diceImage}
-				style={diceImageStyle}
+				style={DiceButtonStyles.image}
+				imageStyle={DiceButtonStyles.imageStyle}
 			>
-				<Text style={numberStyle}>{number}</Text>
+				<Text style={[DiceButtonStyles.number, diceNumber]}>{number}</Text>
 			</ImageBackground>
-
+			<Text style={DiceButtonStyles.placeholder}>{placeholder}</Text>
 		</TouchableOpacity>
 	</>
 };

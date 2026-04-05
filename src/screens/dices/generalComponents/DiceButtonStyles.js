@@ -1,21 +1,31 @@
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 
 export const DiceButtonStyles = StyleSheet.create ({
-    image: {
-        height: '100%',
-        width: '100%', 
-        transform: [{ scale: 1}],
+    button: {
+        width: '30%',
+        aspectRatio: 1,
         alignItems: 'center',
-        flex: 1,
-        
+        justifyContent: 'center',
+    },
+    image: {
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    imageStyle: {
+        resizeMode: 'contain', 
     },
     number: {
-        position: 'absolute',
-        textAlign: 'center',
-        textAlignVertical: 'center',
-        top: '40%',
-        fontSize: 55,
+        fontSize: 40,
         color: 'black',
-        fontFamily: "04B_30__"
-    }
+        fontFamily: "04B_30__",
+    },
+    placeholder: {
+        fontSize: 30,
+        color: 'black',
+        fontFamily: "04B_30__",
+        alignSelf: "center",
+        marginTop: "7.5%"
+    },
 });
