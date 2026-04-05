@@ -16,8 +16,8 @@ export class ChessClock extends Component {
 	};
 
 	resetTimer = () => {
-		this.setState({ minutes: 0 });
-		this.setState({ seconds: 5 });
+		this.setState({ minutes: 10 });
+		this.setState({ seconds: 0 });
 		this.setState({ miliseconds: 0 })
 		clearInterval(this.state.clockTicking);
 		this.setState({ disabled: false });
