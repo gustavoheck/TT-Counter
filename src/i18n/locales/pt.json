@@ -43,7 +43,9 @@
             "blue": "Azul",
             "green": "Verde",
             "red": "Vermelho",
-            "yellow": "Amarelo"
+            "yellow": "Amarelo",
+            "increaseGuide": "Aperte para Aumentar",
+            "decreaseGuide": "Segure para Diminuir"
         }
     },
     "chess": {

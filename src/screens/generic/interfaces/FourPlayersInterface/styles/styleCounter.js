@@ -56,7 +56,7 @@ export const styleCounter = StyleSheet.create({
 	},
     guideText: {
         color: 'white',
-		fontSize: 12.5,
+		fontSize: 11.25,
 		fontFamily: '04B_30__',
 		alignSelf: 'center',
 		textAlign: 'center',

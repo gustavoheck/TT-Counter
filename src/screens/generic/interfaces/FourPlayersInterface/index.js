@@ -48,13 +48,13 @@ export default function FourPlayersInterface() {
 		<View style={styleViews.blue}>
 			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.blue')} />
 			<FourPlayerCounter ref={counterBlue} />
-			<Text style={styleCounter.guideText}>Press to Increase</Text>
+			<Text style={styleCounter.guideText}>{t('generic.genericFourPlayers.increaseGuide')}</Text>
 		</View>
 
 		<View style={styleViews.green}>
 			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.green')} />
 			<FourPlayerCounter ref={counterGreen} />
-			<Text style={styleCounter.guideText}>Hold to Decrease</Text>
+			<Text style={styleCounter.guideText}>{t('generic.genericFourPlayers.decreaseGuide')}</Text>
 		</View>
 
 		<View style={styleViews.red}>
