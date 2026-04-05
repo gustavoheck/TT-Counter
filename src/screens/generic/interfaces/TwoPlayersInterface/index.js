@@ -19,12 +19,12 @@ export default function TwoPlayersInteface() {
 		Alert.alert(t('generic.genericScoreboardsDefault.resetAlertReset'),
 					t('generic.genericScoreboardsDefault.resetAlert'), [
 			{
-				text: t('generic.genericScoreboardsDefault.resetAlertReset'),
+				text: t('generic.genericScoreboardsDefault.resetAlertCancel'),
 				onPress: () => console.log('Cancel Pressed'),
 				style: 'cancel',
 			},
 			{
-				text: t('generic.genericScoreboardsDefault.resetAlertCancel'), onPress: () => {
+				text: t('generic.genericScoreboardsDefault.resetAlertReset'), onPress: () => {
 					topSideCounterRef.current?.resetWins();
 					bottomSideCounterRef.current?.resetWins();
 				}
@@ -33,7 +33,9 @@ export default function TwoPlayersInteface() {
 
 	const ResetWins = () => {
 		return <>
-			<TouchableOpacity onPress={resetWinsOnPress} style={styleOthers.resetButton}><Text style={styleOthers.resetText}>{t('generic.genericScoreboardsDefault.resetWins')}</Text></TouchableOpacity>
+			<TouchableOpacity onPress={resetWinsOnPress} style={styleOthers.resetButton}>
+				<Text style={styleOthers.resetText}>{t('generic.genericScoreboardsDefault.resetWins')}</Text>
+			</TouchableOpacity>
 		</>
 	};
 

@@ -16,7 +16,7 @@ export default function FourPlayersNameInput ({ choosedName }) {
 			style={styles.text}
 			textAlign="center"
 			underlineColorAndroid="transparent"
-			maxLength={7}
+			maxLength={8}
 		/>
 	</>
 };

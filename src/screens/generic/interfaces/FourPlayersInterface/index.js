@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { View, TouchableOpacity, Text, Alert } from "react-native";
+import { useTranslation } from "react-i18next";
 //Styles
 import { styleViews } from "./styles/styleViews";
 import { styleReset } from "./styles/styleReset";
@@ -9,20 +10,23 @@ import FourPlayerCounter from "./components/FourPlayersCounter";
 import FourPlayersNameInput from "./components/FourPlayersNameInput";
 
 export default function FourPlayersInterface() {
+	const { t } = useTranslation()
+
 	const counterBlue = useRef(null);
 	const counterRed = useRef(null);
 	const counterGreen = useRef(null);
 	const counterYellow = useRef(null);
 
 	const resetWinsOnPress = () =>
-		Alert.alert('Reset Wins', 'Do you really want to reset all scoreboards?', [
+		Alert.alert(t('generic.genericScoreboardsDefault.resetAlertReset'),
+					t('generic.genericScoreboardsDefault.resetAlert'), [
 			{
-				text: 'Cancel',
+				text: t('generic.genericScoreboardsDefault.resetAlertCancel'),
 				onPress: () => console.log('Cancel Pressed'),
 				style: 'cancel',
 			},
 			{
-				text: 'Reset', onPress: () => {
+				text: t('generic.genericScoreboardsDefault.resetAlertReset'), onPress: () => {
 					counterBlue.current?.resetWins(),
 						counterGreen.current?.resetWins(),
 						counterRed.current?.resetWins(),
@@ -33,28 +37,30 @@ export default function FourPlayersInterface() {
 
 	const ResetWins = () => {
 		return <>
-			<TouchableOpacity onPress={resetWinsOnPress} style={styleReset.resetButton}><Text style={styleReset.resetText}>Reset Wins</Text></TouchableOpacity>
+			<TouchableOpacity onPress={resetWinsOnPress} style={styleReset.resetButton}>
+				<Text style={styleReset.resetText}>{t('generic.genericScoreboardsDefault.resetWins')}</Text>
+			</TouchableOpacity>
 		</>
 	};
 
 	return <>
 		<View style={styleViews.blue}>
-			<FourPlayersNameInput choosedName="Blue" />
+			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.blue')} />
 			<FourPlayerCounter ref={counterBlue} />
 		</View>
 
 		<View style={styleViews.green}>
-			<FourPlayersNameInput choosedName="Green" />
+			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.green')} />
 			<FourPlayerCounter ref={counterGreen} />
 		</View>
 
 		<View style={styleViews.red}>
-			<FourPlayersNameInput choosedName="Red" />
+			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.red')} />
 			<FourPlayerCounter ref={counterRed} />
 		</View>
 
 		<View style={styleViews.yellow}>
-			<FourPlayersNameInput choosedName="Yellow" />
+			<FourPlayersNameInput choosedName={t('generic.genericFourPlayers.yellow')} />
 			<FourPlayerCounter ref={counterYellow} />
 		</View>
 
