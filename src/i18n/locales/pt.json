@@ -34,7 +34,7 @@
             "menuPlaceholder": "SELECIONAR JOGADORES:"
         },
         "genericScoreboardsDefault": {
-            "resetWins": "Resetar Vitórias",
+            "resetWins": "Resetar Vitorias",
             "resetAlert": "Você realmente deseja resetar todos os placares?",
             "resetAlertCancel": "Cancelar",
             "resetAlertReset": "Resetar"

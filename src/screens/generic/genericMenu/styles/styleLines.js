@@ -12,7 +12,7 @@ export const styleLines = StyleSheet.create({
         fontSize: 28.5,
         textAlign: 'center',
         marginTop: '2.5%',
-        width: '50%',
+        width: '65%',
         alignSelf: 'center',
     },
     divider: {

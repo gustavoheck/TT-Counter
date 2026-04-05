@@ -1,4 +1,3 @@
-
 import GenericRoutes from './genericRoutes';
 import ReturnButton from '../../globalComponents/ReturnButton';
 

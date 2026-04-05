@@ -4,6 +4,7 @@ import { Text, TouchableOpacity } from "react-native";
 import { styleCounter } from "../styles/styleCounter";
 
 export default class TwoPlayersInterface extends Component {
+	
 	constructor() {
 		super();
 		this.state = {
@@ -17,7 +18,6 @@ export default class TwoPlayersInterface extends Component {
 
 	render() {
 		return <>
-			<Text style={styleCounter.winText}>Wins</Text>
 			<Text style={styleCounter.wins}>{this.state.wins}</Text>
 
 			<TouchableOpacity style={styleCounter.buttonAdd} onPress={() => this.setState({ wins: this.state.wins + 1 })}>
@@ -30,3 +30,4 @@ export default class TwoPlayersInterface extends Component {
 		</>
 	};
 };
+

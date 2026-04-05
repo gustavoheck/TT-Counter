@@ -7,20 +7,24 @@ import TwoPlayersInterface from './components/TwoPlayersInterface';
 
 import { styleOthers } from './styles/styleOthers';
 import { stylesViews } from './styles/styleViews';
+import { styleCounter } from './styles/styleCounter';
+import { useTranslation } from 'react-i18next';
 
 export default function TwoPlayersInteface() {
 	const topSideCounterRef = useRef(null);
 	const bottomSideCounterRef = useRef(null);
+	const { t } = useTranslation();
 
 	const resetWinsOnPress = () =>
-		Alert.alert('Reset', 'Você realmente deseja resetar o placar?', [
+		Alert.alert(t('generic.genericScoreboardsDefault.resetAlertReset'),
+					t('generic.genericScoreboardsDefault.resetAlert'), [
 			{
-				text: 'Cancel',
+				text: t('generic.genericScoreboardsDefault.resetAlertReset'),
 				onPress: () => console.log('Cancel Pressed'),
 				style: 'cancel',
 			},
 			{
-				text: 'Reset', onPress: () => {
+				text: t('generic.genericScoreboardsDefault.resetAlertCancel'), onPress: () => {
 					topSideCounterRef.current?.resetWins();
 					bottomSideCounterRef.current?.resetWins();
 				}
@@ -29,18 +33,20 @@ export default function TwoPlayersInteface() {
 
 	const ResetWins = () => {
 		return <>
-			<TouchableOpacity onPress={resetWinsOnPress} style={styleOthers.resetButton}><Text style={styleOthers.resetText}>Reset Wins</Text></TouchableOpacity>
+			<TouchableOpacity onPress={resetWinsOnPress} style={styleOthers.resetButton}><Text style={styleOthers.resetText}>{t('generic.genericScoreboardsDefault.resetWins')}</Text></TouchableOpacity>
 		</>
 	};
 
 	return <>
 		<View style={stylesViews.topSide}>
-			<TwoPlayersNameInput playerName={"PlayerUm"} />
+			<TwoPlayersNameInput playerName={t('screensDefault.playerOneNameInput')} />
+			<Text style={styleCounter.winText}>{t('screensDefault.wins')}</Text>
 			<TwoPlayersInterface ref={topSideCounterRef} />
 		</View>
 
 		<View style={stylesViews.bottomSide}>
-			<TwoPlayersNameInput playerName={"PlayerDois"} styleText={styleOthers.name} />
+			<TwoPlayersNameInput playerName={t('screensDefault.playerTwoNameInput')} styleText={styleOthers.name} />
+			<Text style={styleCounter.winText}>{t('screensDefault.wins')}</Text>
 			<TwoPlayersInterface ref={bottomSideCounterRef} />
 			<ResetWins />
 		</View>
