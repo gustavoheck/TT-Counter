@@ -1,10 +1,13 @@
 import { View, Text } from "react-native";
+import { useTranslation } from "react-i18next";
 
 import { styleDetails } from "../styles/styleDetails";
 
 export default function Details() {
+	const { t } = useTranslation()
+
 	return <>
-		<Text style={styleDetails.title}>Chess</Text>
+		<Text style={styleDetails.title}>{t('mainMenu.chessPlaceholder')}</Text>
 
 		<View style={styleDetails.horizontalDivider} />
 	</>

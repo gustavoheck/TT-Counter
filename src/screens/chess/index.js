@@ -11,8 +11,11 @@ import { styleNames } from "./styles/styleNames";
 import { styleClock } from "./styles/styleClock";
 
 import restart from "./images/restart.png"
+import { useTranslation } from "react-i18next";
 
 export default function Chess() {
+	const { t } = useTranslation();
+
 	const clockOneRef = useRef(null);
 	const clockTwoRef = useRef(null);
 
@@ -27,7 +30,7 @@ export default function Chess() {
 				color={"white"}
 			/>
 			<ChessNameInput
-				choosedName={"Player One"}
+				choosedName={t('screensDefault.playerOneNameInput')}
 				styleName={styleNames.nameOne}
 			/>
 			<ChessClock
@@ -37,10 +40,11 @@ export default function Chess() {
 					clockOneRef.current?.stopTimer()
 					clockTwoRef.current?.startTimer()
 				}}
-				winMessage={"Player Two has winned by time!"}
+				winMessage={t('chess.playerTwoWinMessage')}
+				congrats={t('chess.winCongratulations')}
 			/>
 			<ChessNameInput
-				choosedName={"Player Two"}
+				choosedName={t('screensDefault.playerTwoNameInput')}
 				styleName={styleNames.nameTwo}
 			/>
 			<ChessClock
@@ -50,7 +54,8 @@ export default function Chess() {
 					clockTwoRef.current?.stopTimer()
 					clockOneRef.current?.startTimer()
 				}}
-				winMessage={"Player One has winned by time!"}
+				winMessage={t('chess.playerOneWinMessage')}
+				congrats={t('chess.winCongratulations')}
 			/>
 			<TouchableOpacity style={styleClock.resetButton} onPress={reset}>
 				<Image

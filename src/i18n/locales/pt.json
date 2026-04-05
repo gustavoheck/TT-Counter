@@ -49,6 +49,6 @@
     "chess": {
         "playerOneWinMessage": "O Jogador Um ganhou por tempo!",
         "playerTwoWinMessage": "O Jogador Dois ganhou por tempo!",
-        "winCongratulations": "Congratulations!"
+        "winCongratulations": "Parabéns!"
     }
 }

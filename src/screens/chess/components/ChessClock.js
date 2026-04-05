@@ -16,8 +16,8 @@ export class ChessClock extends Component {
 	};
 
 	resetTimer = () => {
-		this.setState({ minutes: 10 });
-		this.setState({ seconds: 0 });
+		this.setState({ minutes: 0 });
+		this.setState({ seconds: 5 });
 		this.setState({ miliseconds: 0 })
 		clearInterval(this.state.clockTicking);
 		this.setState({ disabled: false });
@@ -37,7 +37,7 @@ export class ChessClock extends Component {
 		this.setState((prevState) => {
 			if (prevState.minutes == 0 && prevState.seconds == 0 && prevState.miliseconds == 0) {
 				this.resetTimer();
-				Alert.alert('Congratulations!', this.props.winMessage, [
+				Alert.alert(this.props.congrats, this.props.winMessage, [
 					{
 						text: 'OK',
 						onPress: () => console.log('Cancel Pressed'),
