@@ -5,8 +5,7 @@ export const styleReset = StyleSheet.create({
 		bottom: '2%',
 		alignSelf: 'center',
 		position: 'absolute',
-		maxWidth: '50%'
-	},
+		maxWidth: '100%'},
 	resetText: {
 		textShadowColor: 'rgba(0, 0, 0, 0.75)',
 		textShadowOffset: { width: 8, height: 1 },
