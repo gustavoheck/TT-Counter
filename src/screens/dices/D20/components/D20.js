@@ -1,8 +1,5 @@
-import { D20Styles } from "../styles/D20Styles";
-
 import D20Image from '../images/D20Image.png';
 import DiceButton from "../../generalComponents/DiceButton";
-import { DiceButtonStyles } from "../../generalComponents/DiceButtonStyles";
 
 export default function D20() {
 	return <>
