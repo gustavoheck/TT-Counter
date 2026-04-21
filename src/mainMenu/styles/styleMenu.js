@@ -15,7 +15,7 @@ export const styleMenu = StyleSheet.create({
 		width: '40%',
 		height: '40%', 
 		margin: '5%',
-		marginTop: '12.5%',
+		marginTop: '10%',
 	},
 	menuImage: {
 		alignSelf: 'center',
@@ -26,9 +26,9 @@ export const styleMenu = StyleSheet.create({
 	placeholder: {
 		color: 'white',
 		fontFamily: "04B_30__",
-		fontSize: 30,
+		fontSize: 20,
 		textAlign: 'center',
-  		marginTop: '2.5%',
+  		marginTop: '1.5%',
 	},
 	buttonsContainer: {
 		flexWrap: 'wrap',
